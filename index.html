@@ -110,38 +110,34 @@
             <div id="video-player" class="hidden aspect-video rounded-3xl overflow-hidden border border-white/10"></div>
         </div>
 
-<!-- LATEST TWEETS BLOCK -->
+        
+<!-- LATEST ON X - AUTO UPDATING -->
 <div class="mt-20">
-    <div class="flex items-baseline justify-between mb-8">
+    <div class="flex justify-between items-baseline mb-8">
         <h2 class="text-3xl font-semibold tracking-tight">Latest on X</h2>
-        <a href="https://x.com/CernBasher" 
-           target="_blank"
-           class="text-sm flex items-center gap-x-1 text-white/60 hover:text-white">
-            <span>@CernBasher</span>
-            <span class="text-xl">𝕏</span>
+        <a href="https://x.com/CernBasher" target="_blank" 
+           class="text-sm flex items-center gap-1 text-white/60 hover:text-white">
+            @CernBasher <span class="text-xl">𝕏</span>
         </a>
     </div>
     
-    <div class="space-y-8" id="tweets-container">
-        <!-- Real recent tweets as of April 14 2026 -->
-        <blockquote class="twitter-tweet tweet-container" data-theme="dark" data-width="100%" data-dnt="true">
-            <a href="https://x.com/CernBasher/status/2044162923656822873"></a>
-        </blockquote>
-        
-        <blockquote class="twitter-tweet tweet-container" data-theme="dark" data-width="100%" data-dnt="true">
-            <a href="https://x.com/CernBasher/status/2044133287367410155"></a>
-        </blockquote>
-        
-        <blockquote class="twitter-tweet tweet-container" data-theme="dark" data-width="100%" data-dnt="true">
-            <a href="https://x.com/CernBasher/status/2044061378248311096"></a>
-        </blockquote>
+    <!-- Official X Timeline Embed - shows latest posts automatically -->
+    <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-4 min-h-[420px]">
+        <a class="twitter-timeline" 
+           href="https://twitter.com/CernBasher"
+           data-theme="dark"
+           data-width="100%"
+           data-height="520"
+           data-tweet-limit="3"
+           data-chrome="noheader nofooter noborders transparent">
+        </a>
     </div>
     
-    <p class="text-center text-xs text-white/40 mt-8">
-        More posts on <a href="https://x.com/CernBasher" target="_blank" class="underline hover:text-white">@CernBasher</a>
+    <p class="text-center text-xs text-white/40 mt-6">
+        Real-time Tesla &amp; Elon commentary • Auto-updates
     </p>
 </div>
-
+        
 
         <!-- LINKFO AGENT EMBED BLOCK -->
         <div class="mt-20 pt-12 border-t border-white/10">
