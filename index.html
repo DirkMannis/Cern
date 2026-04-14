@@ -3,292 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cern Basher — Tesla, SpaceX, xAI, Optimus &amp; the Elon Musk ecosystem. Latest video + real-time commentary.">
+    <meta name="description" content="Cern Basher — Tesla, SpaceX, xAI, Optimus & the Elon Musk ecosystem. Latest analysis and commentary.">
     <title>Cern Basher</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
         
         :root {
-            --tw-color-primary: #e11d48;
+            --rose: #e11d48;
         }
         
-        * {
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms;
+        * { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #000;
+            color: white;
+            margin: 0;
+            min-height: 100vh;
+            background: radial-gradient(circle at 50% 20%, rgba(225, 29, 72, 0.12) 0%, transparent 70%);
         }
         
-        .tail-container {
-            font-family: 'Inter', system_ui, sans-serif;
+        .header-font { font-family: 'Space Grotesk', sans-serif; }
+        
+        .container {
+            max-width: 672px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
         
-        .header-font {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .hero-bg {
-            background: radial-gradient(circle at 50% 20%, rgba(225, 29, 72, 0.15) 0%, transparent 70%);
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(12px);
         }
         
         .tweet-container {
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255,255,255,0.06);
         }
         
         .play-button {
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
         }
     </style>
 </head>
-<body class="tail-container bg-black text-white min-h-screen hero-bg">
-    <!-- HEADER - Pure Tesla/Optimus minimalism -->
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-lg">
-        <div class="max-w-2xl mx-auto px-6 py-6 flex items-center justify-center gap-x-4">
-            <!-- PFP from X (high-res) -->
-            <img 
-                src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
-                alt="Cern Basher"
-                class="w-11 h-11 rounded-2xl ring-2 ring-white/20 hover:ring-white/40 object-cover">
-            
-            <h1 class="header-font text-4xl font-medium tracking-[-1px] text-white">
-                Cern Basher
-            </h1>
-            
-            <!-- Subtle tagline with Optimus/Tesla energy -->
-            <div class="text-xs font-mono tracking-[2px] text-rose-400/70 ml-2 hidden sm:block">
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container py-6 flex items-center justify-center gap-x-4">
+            <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
+                 alt="Cern Basher" 
+                 class="w-11 h-11 rounded-2xl ring-2 ring-white/20">
+            <h1 class="header-font text-4xl font-medium tracking-[-1.5px]">Cern Basher</h1>
+            <div class="text-xs font-mono tracking-[2px] text-rose-400/70 hidden sm:block ml-3">
                 TESLA • SPACEX • xAI • OPTIMUS
             </div>
         </div>
     </header>
 
-    <main class="max-w-2xl mx-auto px-6 pb-24">
+    <main class="container pb-24">
         
-        <!-- LATEST YOUTUBE VIDEO BLOCK -->
+        <!-- LATEST VIDEO -->
         <div class="mt-12">
-            <div class="flex items-baseline justify-between mb-6">
+            <div class="flex justify-between items-baseline mb-6">
                 <h2 class="text-3xl font-semibold tracking-tight">Latest Video</h2>
-                <a href="https://www.youtube.com/@CernBasher" 
-                   target="_blank"
-                   class="text-sm flex items-center gap-x-1 text-white/60 hover:text-white group">
-                    <span class="text-base">▶</span>
-                    <span class="group-hover:underline">YouTube @CernBasher</span>
+                <a href="https://www.youtube.com/@CernBasher" target="_blank" 
+                   class="text-sm flex items-center gap-1 text-white/60 hover:text-white">
+                    YouTube @CernBasher →
                 </a>
             </div>
             
-            <!-- Thumbnail + Play -->
-            <div id="video-wrapper" 
-                 onclick="playVideo()"
-                 class="group relative cursor-pointer rounded-3xl overflow-hidden bg-zinc-950 shadow-2xl border border-white/10 aspect-video flex items-center justify-center">
+            <div id="video-wrapper" onclick="playVideo()" 
+                 class="group relative cursor-pointer rounded-3xl overflow-hidden bg-zinc-950 border border-white/10 aspect-video shadow-2xl">
+                <img id="thumbnail" src="https://i.ytimg.com/vi/zeG3aJQByWw/maxresdefault.jpg" 
+                     class="w-full h-full object-cover group-hover:scale-105" alt="Latest Video">
                 
-                <!-- Thumbnail -->
-                <img id="thumbnail"
-                     src="https://i.ytimg.com/vi/zeG3aJQByWw/maxresdefault.jpg"
-                     alt="The Tesla Opportunity Wall Street Hasn't Priced In"
-                     class="w-full h-full object-cover group-hover:scale-105">
-                
-                <!-- Play overlay -->
-                <div class="play-button absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40">
-                    <div class="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-xl">
+                <div class="play-button absolute inset-0 flex items-center justify-center bg-black/40">
+                    <div class="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-rose-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M8 5.14v14l11-7z"/>
                         </svg>
                     </div>
                 </div>
                 
-                <!-- Video info overlay -->
-                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-6 py-4">
-                    <p id="video-title" class="text-lg font-semibold leading-tight">
-                        The Tesla Opportunity Wall Street Hasn't Priced In
-                    </p>
-                    <p class="text-xs text-white/60 mt-1">Cern Basher • 13 Apr 2026</p>
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 px-6 py-5">
+                    <p class="text-lg font-semibold leading-tight" id="video-title">The Tesla Opportunity Wall Street Hasn't Priced In</p>
+                    <p class="text-xs text-white/60 mt-1">Cern Basher • April 2026</p>
                 </div>
             </div>
             
-            <!-- Hidden iframe container -->
-            <div id="video-player" class="hidden aspect-video rounded-3xl overflow-hidden border border-white/10"></div>
+            <div id="video-player" class="hidden aspect-video rounded-3xl overflow-hidden"></div>
         </div>
 
-        
-<!-- LATEST ON X - Custom Reliable Version (Auto-feels fresh) -->
-<div class="mt-20">
-    <div class="flex justify-between items-baseline mb-8">
-        <h2 class="text-3xl font-semibold tracking-tight">Latest on X</h2>
-        <a href="https://x.com/CernBasher" target="_blank" 
-           class="text-sm flex items-center gap-1 text-white/60 hover:text-white">
-            @CernBasher <span class="text-xl">𝕏</span>
-        </a>
-    </div>
-    
-    <div class="space-y-6">
-        <!-- Post 1 -->
-        <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-6">
-            <div class="flex items-center gap-3 mb-4">
-                <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
-                     class="w-10 h-10 rounded-full" alt="Cern Basher">
-                <div>
-                    <div class="font-semibold">Cern Basher</div>
-                    <div class="text-white/50 text-sm">@CernBasher · 14 Apr 2026</div>
+        <!-- LATEST ON X -->
+        <div class="mt-20">
+            <div class="flex justify-between items-baseline mb-8">
+                <h2 class="text-3xl font-semibold tracking-tight">Latest on X</h2>
+                <a href="https://x.com/CernBasher" target="_blank" 
+                   class="text-sm flex items-center gap-1 text-white/60 hover:text-white">
+                    @CernBasher <span class="text-xl">𝕏</span>
+                </a>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- Post 1 -->
+                <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
+                             class="w-10 h-10 rounded-full" alt="Cern Basher">
+                        <div>
+                            <div class="font-semibold">Cern Basher</div>
+                            <div class="text-white/50 text-sm">@CernBasher · 14 Apr 2026</div>
+                        </div>
+                    </div>
+                    <p class="text-[17px] leading-relaxed">Sorry about that, here it is: <a href="https://x.com/CernBasher/status/2044162923656822873" target="_blank" class="text-rose-400 hover:underline">https://x.com/CernBasher/status/2044162923656822873</a></p>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
+                             class="w-10 h-10 rounded-full" alt="Cern Basher">
+                        <div>
+                            <div class="font-semibold">Cern Basher</div>
+                            <div class="text-white/50 text-sm">@CernBasher · 14 Apr 2026</div>
+                        </div>
+                    </div>
+                    <p class="text-[17px] leading-relaxed">See the link to the first article (it’s defined there - not my definition).</p>
                 </div>
             </div>
-            <p class="text-[17px] leading-relaxed">Sorry about that, here it is: <a href="https://x.com/CernBasher/status/2044162923656822873" target="_blank" class="text-rose-400 hover:underline">https://x.com/CernBasher/status/2044162923656822873</a></p>
+            
+            <p class="text-center text-xs text-white/40 mt-8">
+                Follow <a href="https://x.com/CernBasher" target="_blank" class="underline hover:text-white">@CernBasher</a> for real-time Tesla &amp; Elon commentary
+            </p>
         </div>
 
-        <!-- Post 2 -->
-        <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-6">
-            <div class="flex items-center gap-3 mb-4">
-                <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
-                     class="w-10 h-10 rounded-full" alt="Cern Basher">
-                <div>
-                    <div class="font-semibold">Cern Basher</div>
-                    <div class="text-white/50 text-sm">@CernBasher · 14 Apr 2026</div>
-                </div>
-            </div>
-            <p class="text-[17px] leading-relaxed">See the link to the first article (it’s defined there - not my definition).</p>
-        </div>
-
-        <!-- Post 3 -->
-        <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-6">
-            <div class="flex items-center gap-3 mb-4">
-                <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
-                     class="w-10 h-10 rounded-full" alt="Cern Basher">
-                <div>
-                    <div class="font-semibold">Cern Basher</div>
-                    <div class="text-white/50 text-sm">@CernBasher · 14 Apr 2026</div>
-                </div>
-            </div>
-            <p class="text-[17px] leading-relaxed">"It's name is "Joke" right?"</p>
-        </div>
-    </div>
-    
-    <p class="text-center text-xs text-white/40 mt-8">
-        Follow <a href="https://x.com/CernBasher" target="_blank" class="underline hover:text-white">@CernBasher</a> for real-time updates
-    </p>
-</div>
-        
-
-        <!-- LINKFO AGENT EMBED BLOCK -->
+        <!-- LINKFO AGENT -->
         <div class="mt-20 pt-12 border-t border-white/10">
-            <div class="flex items-center gap-x-3 mb-6">
-                <div class="w-8 h-8 bg-gradient-to-br from-rose-500 to-violet-500 rounded-2xl flex items-center justify-center text-xl">🤖</div>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-9 h-9 bg-gradient-to-br from-rose-500 to-rose-600 rounded-2xl flex items-center justify-center text-2xl">🤖</div>
                 <h2 class="text-3xl font-semibold tracking-tight">Talk to the Agent</h2>
             </div>
             
-            <!-- James's Linkfo Agent Chat Embed (placeholder - replace with the exact JS embed James gave you) -->
-            <!-- Once you create the Cern Basher Linkfo account, paste the full embed code here -->
-            <div id="linkfo-agent-container" class="bg-zinc-900 rounded-3xl p-2 shadow-inner border border-white/10">
-                <!-- 
-                    EXAMPLE EMBED (replace this entire div content with James's JavaScript embed):
-                    
-                    <script src="https://linkfo.me/embed/agent.js" 
-                            data-username="cernbasher" 
-                            data-theme="dark"
-                            data-height="620"></script>
-                    
-                    OR whatever the exact embed syntax James developed.
-                -->
-                <div class="h-[620px] flex items-center justify-center rounded-3xl bg-black/50 text-white/60 text-center px-8">
-                    <div>
-                        <div class="text-5xl mb-4">🚀</div>
-                        <p class="text-xl font-medium mb-2">Linkfo Agent for Cern Basher</p>
-                        <p class="text-sm max-w-xs mx-auto">Create the Linkfo account for @CernBasher first, then paste James’s JavaScript embed code here. The agent will guide visitors with intelligent Tesla / Elon ecosystem insights.</p>
-                        <a href="https://linkfo.me" 
-                           target="_blank"
-                           class="inline-flex mt-8 items-center px-5 py-2.5 bg-white text-black rounded-2xl font-semibold text-sm hover:scale-105">
-                            🔗 linkfo.me
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <p class="text-center text-xs text-white/40 mt-6">
-                Powered by <span class="font-semibold text-white">Linkfo.me</span> — the AI agent that turns a simple link-in-bio into an intelligent conversation.
-            </p>
+            <!-- Cern's Linkfo Agent -->
+            <script src="https://linkfo.me/embed.js"
+              data-username="cern"
+              data-position="bottom"
+              data-color="#e11d48">
+            </script>
         </div>
     </main>
 
-    <!-- Footer - ultra minimal -->
-    <footer class="max-w-2xl mx-auto px-6 py-12 border-t border-white/10 text-center text-xs text-white/30">
-        © Cern Basher • Not financial advice • Built as a side quest for the <a href="https://linkfo.me" class="underline hover:text-white">Linkfo.me</a> launch
+    <footer class="container py-12 border-t border-white/10 text-center text-xs text-white/30">
+        © Cern Basher • Not financial advice • Built as a side quest for <a href="https://linkfo.me" class="underline hover:text-white">Linkfo.me</a>
     </footer>
 
-    <!-- Twitter/X Embed Script -->
+    <!-- X Widgets -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
-<script>
-    // Force reload widgets after page load
-    window.onload = function() {
-        if (window.twttr && window.twttr.widgets) {
-            window.twttr.widgets.load();
-        }
-    };
-    
-    // Also retry after 2 seconds in case of race condition
-    setTimeout(() => {
-        if (window.twttr && window.twttr.widgets) {
-            window.twttr.widgets.load();
-        }
-    }, 2000);
-</script>
-    
 
-    <!-- Tailwind script + video play handler -->
     <script>
-        // Tailwind CDN initialization
-        function initializeTailwind() {
-            return {
-                config(userConfig = {}) {
-                    return {
-                        configUser: userConfig,
-                        theme: {
-                            extend: {
-                                fontFamily: {
-                                    header: ['Space Grotesk']
-                                }
-                            }
-                        }
-                    }
-                },
-                theme(userConfig = {}) {
-                    return {
-                        ...this.defaultTheme(),
-                        ...this.config(userConfig).theme
-                    }
-                },
-                defaultTheme() {
-                    return {}
-                }
-            }
-        }
-        document.addEventListener('DOMContentLoaded', () => {
-            const config = initializeTailwind().theme()
-            // Tailwind CDN is now ready for all classes
-        })
-
-        // Play video - replace thumbnail with real YouTube player
         function playVideo() {
-            const wrapper = document.getElementById('video-wrapper')
-            const playerContainer = document.getElementById('video-player')
-            
-            wrapper.classList.add('hidden')
-            playerContainer.classList.remove('hidden')
-            
-            // YouTube embed (autoplay + modest branding)
-            playerContainer.innerHTML = `
-                <iframe 
-                    width="100%" 
-                    height="100%" 
-                    src="https://www.youtube.com/embed/zeG3aJQByWw?autoplay=1&amp;modestbranding=1&amp;rel=0"
-                    title="The Tesla Opportunity Wall Street Hasn't Priced In"
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            `
+            document.getElementById('video-wrapper').classList.add('hidden');
+            const player = document.getElementById('video-player');
+            player.classList.remove('hidden');
+            player.innerHTML = `
+                <iframe width="100%" height="100%" 
+                    src="https://www.youtube.com/embed/zeG3aJQByWw?autoplay=1&modestbranding=1&rel=0" 
+                    frameborder="0" allowfullscreen></iframe>
+            `;
         }
-        
-        console.log('%c✅ CernBasher.com site ready — Tesla/Optimus sleek minimal design loaded', 'background:#e11d48;color:#fff;padding:2px 6px;border-radius:4px;font-size:10px')
     </script>
 </body>
 </html>
