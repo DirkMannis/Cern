@@ -190,6 +190,23 @@
 
     <!-- Twitter/X Embed Script -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+<script>
+    // Force reload widgets after page load
+    window.onload = function() {
+        if (window.twttr && window.twttr.widgets) {
+            window.twttr.widgets.load();
+        }
+    };
+    
+    // Also retry after 2 seconds in case of race condition
+    setTimeout(() => {
+        if (window.twttr && window.twttr.widgets) {
+            window.twttr.widgets.load();
+        }
+    }, 2000);
+</script>
+    
 
     <!-- Tailwind script + video play handler -->
     <script>
