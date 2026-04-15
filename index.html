@@ -38,7 +38,15 @@
         }
         
         .section {
-            margin-top: 40px;
+            margin-top: 32px;           /* Reduced */
+        }
+        
+        .video-section {
+            margin-top: 24px;           /* Tighter after Bot */
+        }
+        
+        .x-section {
+            margin-top: 28px;           /* Tight after Video */
         }
         
         .tweet-card {
@@ -89,7 +97,7 @@
 
     <main class="container" style="padding-top:12px;">
         
-        <!-- 1. Cern Basher Bot (First) -->
+        <!-- 1. Bot -->
         <div class="section agent-section">
             <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to Cern Basher Bot</h2>
             <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link">
@@ -98,7 +106,7 @@
         </div>
 
         <!-- 2. Latest Video -->
-        <div class="section">
+        <div class="section video-section">
             <h2 style="font-size:2.05rem; margin-bottom:16px;">Latest Video</h2>
             <div id="video-wrapper" onclick="playVideo()" 
                  style="position:relative; cursor:pointer; border-radius:24px; overflow:hidden; background:#111; border:1px solid #222;">
@@ -114,7 +122,7 @@
         </div>
 
         <!-- 3. Latest on X -->
-        <div class="section">
+        <div class="section x-section">
             <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:20px;">
                 <h2 style="font-size:2.05rem;">Latest on X</h2>
                 <a href="https://x.com/CernBasher" target="_blank" style="color:#aaa; text-decoration:none;">@CernBasher 𝕏</a>
@@ -154,7 +162,6 @@
         © Cern Basher • Not financial advice • Built for <a href="https://linkfo.me" style="color:#e11d48;">Linkfo.me</a>
     </footer>
 
-    <!-- Floating Chat Widget (Bottom Right) -->
     <script src="https://linkfo.me/embed.js" 
             data-username="cern" 
             data-position="right" 
