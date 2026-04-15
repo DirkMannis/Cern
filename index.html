@@ -37,12 +37,19 @@
             flex-wrap: wrap;
         }
         
-        .section {
-            margin-top: 28px;           /* Overall tight spacing */
+        /* Modern flex layout for the central sections */
+        main.container {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;           /* clean, consistent spacing between sections */
+            padding-top: 12px;
         }
         
+        /* Remove all forced top/bottom margins so each section hugs its content */
+        .section,
         .first-section {
-            margin-top: 20px;           /* Video at the top */
+            margin-top: 0;
+            margin-bottom: 0;
         }
         
         .tweet-card {
@@ -74,6 +81,23 @@
             background: #e11d48;
             transform: translateY(-3px);
         }
+        
+        /* Ensure the hidden video player is truly hidden until clicked */
+        .hidden {
+            display: none;
+        }
+        
+        /* Mobile improvements */
+        @media (max-width: 640px) {
+            main.container {
+                gap: 2rem;         /* slightly tighter on mobile */
+                padding: 12px 16px;
+            }
+            
+            h2 {
+                font-size: 1.85rem !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -91,7 +115,7 @@
         </div>
     </header>
 
-    <main class="container" style="padding-top:12px;">
+    <main class="container">
         
         <!-- 1. Latest Video -->
         <div class="section first-section">
