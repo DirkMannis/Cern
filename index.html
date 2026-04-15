@@ -6,220 +6,149 @@
     <meta name="description" content="Cern Basher — Tesla, SpaceX, xAI, Optimus & the Elon Musk ecosystem. Latest analysis and commentary.">
     <title>Cern Basher</title>
     
+    <!-- Cache bust -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
-        
-        :root {
-            --rose: #e11d48;
-        }
-        
-        * { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
         
         body {
             font-family: 'Inter', system-ui, sans-serif;
             background: #000;
-            color: white;
+            color: #fff;
             margin: 0;
+            padding: 0;
             min-height: 100vh;
-            background: radial-gradient(circle at 50% 20%, rgba(225, 29, 72, 0.12) 0%, transparent 70%);
+            background: radial-gradient(circle at 50% 30%, rgba(225, 29, 72, 0.15) 0%, transparent 60%);
         }
         
         .header-font { font-family: 'Space Grotesk', sans-serif; }
         
-        .container {
-            max-width: 672px;
-            margin: 0 auto;
-            padding: 0 24px;
+        .container { 
+            max-width: 680px; 
+            margin: 0 auto; 
+            padding: 0 28px; 
         }
         
         header {
-            position: sticky;
-            top: 0;
-            z-index: 50;
+            padding: 32px 0 40px;
+            text-align: center;
             border-bottom: 1px solid rgba(255,255,255,0.08);
-            background: rgba(0,0,0,0.85);
-            backdrop-filter: blur(12px);
         }
         
-        .tweet-container {
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.6);
+        .tweet-card {
+            background: #0a0a0a;
             border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 22px;
+            padding: 28px;
+            margin-bottom: 28px;
         }
         
-        .play-button {
-            animation: pulse 2s infinite;
+        .agent-card {
+            background: #0a0a0a;
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            border-radius: 22px;
+            padding: 32px;
+            text-align: center;
+            transition: all 0.3s ease;
         }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+        .agent-card:hover {
+            transform: translateY(-4px);
+            border-color: #3b82f6;
         }
     </style>
 </head>
 <body>
-    <!-- HEADER -->
     <header>
-        <div class="container py-6 flex items-center justify-center gap-x-4">
+        <div class="container">
             <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
                  alt="Cern Basher" 
-                 class="w-11 h-11 rounded-2xl ring-2 ring-white/20">
-            <h1 class="header-font text-4xl font-medium tracking-[-1.5px]">Cern Basher</h1>
-            <div class="text-xs font-mono tracking-[2px] text-rose-400/70 hidden sm:block ml-3">
+                 style="width:80px; height:80px; border-radius:9999px; margin-bottom:16px; border:3px solid #e11d48;">
+            <h1 class="header-font" style="font-size:3.2rem; font-weight:700; letter-spacing:-2px; margin:0;">Cern Basher</h1>
+            <p style="color:#e11d48; font-size:0.95rem; letter-spacing:4px; margin-top:8px; font-weight:500;">
                 TESLA • SPACEX • xAI • OPTIMUS
-            </div>
+            </p>
         </div>
     </header>
 
     <main class="container pb-24">
         
-        <!-- LATEST VIDEO -->
-        <div class="mt-12">
-            <div class="flex justify-between items-baseline mb-6">
-                <h2 class="text-3xl font-semibold tracking-tight">Latest Video</h2>
-                <a href="https://www.youtube.com/@CernBasher" target="_blank" 
-                   class="text-sm flex items-center gap-1 text-white/60 hover:text-white">
-                    YouTube @CernBasher →
-                </a>
-            </div>
-            
+        <!-- Latest Video -->
+        <div style="margin-top:60px;">
+            <h2 style="font-size:2.1rem; margin-bottom:20px;">Latest Video</h2>
             <div id="video-wrapper" onclick="playVideo()" 
-                 class="group relative cursor-pointer rounded-3xl overflow-hidden bg-zinc-950 border border-white/10 aspect-video shadow-2xl">
+                 style="position:relative; cursor:pointer; border-radius:24px; overflow:hidden; background:#111; border:1px solid #222;">
                 <img id="thumbnail" src="https://i.ytimg.com/vi/zeG3aJQByWw/maxresdefault.jpg" 
-                     class="w-full h-full object-cover group-hover:scale-105" alt="Latest Video">
-                
-                <div class="play-button absolute inset-0 flex items-center justify-center bg-black/40">
-                    <div class="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-2xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-rose-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5.14v14l11-7z"/>
-                        </svg>
+                     style="width:100%; display:block;">
+                <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4);">
+                    <div style="width:90px; height:90px; background:white; border-radius:9999px; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e11d48" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg>
                     </div>
                 </div>
-                
-                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 px-6 py-5">
-                    <p class="text-lg font-semibold leading-tight" id="video-title">The Tesla Opportunity Wall Street Hasn't Priced In</p>
-                    <p class="text-xs text-white/60 mt-1">Cern Basher • April 2026</p>
-                </div>
+            </div>
+            <div id="video-player" class="hidden" style="aspect-ratio:16/9; border-radius:24px; overflow:hidden;"></div>
+        </div>
+
+        <!-- Latest on X -->
+        <div style="margin-top:80px;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:28px;">
+                <h2 style="font-size:2.1rem;">Latest on X</h2>
+                <a href="https://x.com/CernBasher" target="_blank" style="color:#aaa; text-decoration:none;">@CernBasher 𝕏</a>
             </div>
             
-            <div id="video-player" class="hidden aspect-video rounded-3xl overflow-hidden"></div>
-        </div>
-
-
-<!-- LATEST ON X - Custom Reliable Version (Auto-feels fresh) -->
-<div class="mt-20">
-    <div class="flex justify-between items-baseline mb-8">
-        <h2 class="text-3xl font-semibold tracking-tight">Latest on X</h2>
-        <a href="https://x.com/CernBasher" target="_blank" 
-           class="text-sm flex items-center gap-1 text-white/60 hover:text-white">
-            @CernBasher <span class="text-xl">𝕏</span>
-        </a>
-    </div>
-    
-    <div class="space-y-6">
-        <!-- Post 1 -->
-        <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-6">
-            <div class="flex items-center gap-3 mb-4">
-                <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
-                     class="w-10 h-10 rounded-full" alt="Cern Basher">
-                <div>
-                    <div class="font-semibold">Cern Basher</div>
-                    <div class="text-white/50 text-sm">@CernBasher · 14 Apr 2026</div>
+            <div class="tweet-card">
+                <div style="display:flex; gap:14px; margin-bottom:16px;">
+                    <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:48px; height:48px; border-radius:9999px;">
+                    <div>
+                        <div style="font-weight:600;">Cern Basher</div>
+                        <div style="color:#666; font-size:0.9rem;">@CernBasher · 14 Apr 2026</div>
+                    </div>
                 </div>
+                <p style="font-size:1.08rem; line-height:1.55;">Sorry about that, here it is: <a href="https://x.com/CernBasher/status/2044162923656822873" target="_blank" style="color:#e11d48;">View post →</a></p>
             </div>
-            <p class="text-[17px] leading-relaxed">Sorry about that, here it is: <a href="https://x.com/CernBasher/status/2044162923656822873" target="_blank" class="text-rose-400 hover:underline">https://x.com/CernBasher/status/2044162923656822873</a></p>
-        </div>
 
-        <!-- Post 2 -->
-        <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-6">
-            <div class="flex items-center gap-3 mb-4">
-                <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
-                     class="w-10 h-10 rounded-full" alt="Cern Basher">
-                <div>
-                    <div class="font-semibold">Cern Basher</div>
-                    <div class="text-white/50 text-sm">@CernBasher · 14 Apr 2026</div>
+            <div class="tweet-card">
+                <div style="display:flex; gap:14px; margin-bottom:16px;">
+                    <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:48px; height:48px; border-radius:9999px;">
+                    <div>
+                        <div style="font-weight:600;">Cern Basher</div>
+                        <div style="color:#666; font-size:0.9rem;">@CernBasher · 14 Apr 2026</div>
+                    </div>
                 </div>
+                <p style="font-size:1.08rem; line-height:1.55;">See the link to the first article (it’s defined there - not my definition).</p>
             </div>
-            <p class="text-[17px] leading-relaxed">See the link to the first article (it’s defined there - not my definition).</p>
         </div>
 
-        <!-- Post 3 -->
-        <div class="tweet-container bg-zinc-950 border border-white/10 rounded-3xl p-6">
-            <div class="flex items-center gap-3 mb-4">
-                <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
-                     class="w-10 h-10 rounded-full" alt="Cern Basher">
-                <div>
-                    <div class="font-semibold">Cern Basher</div>
-                    <div class="text-white/50 text-sm">@CernBasher · 14 Apr 2026</div>
-                </div>
-            </div>
-            <p class="text-[17px] leading-relaxed">"It's name is "Joke" right?"</p>
-        </div>
-    </div>
-    
-    <p class="text-center text-xs text-white/40 mt-8">
-        Follow <a href="https://x.com/CernBasher" target="_blank" class="underline hover:text-white">@CernBasher</a> for real-time updates
-    </p>
-</div>
-        
-
-        <!-- LINKFO AGENT -->
-        <div class="mt-20 pt-12 border-t border-white/10">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="w-9 h-9 bg-gradient-to-br from-rose-500 to-violet-500 rounded-2xl flex items-center justify-center text-2xl">🤖</div>
-                <h2 class="text-3xl font-semibold tracking-tight">Talk to the Agent</h2>
-            </div>
+        <!-- Talk to the Agent -->
+        <div style="margin-top:80px; padding-top:40px; border-top:1px solid rgba(255,255,255,0.08);">
+            <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to the Agent</h2>
             
-            <!-- ← Paste James's Linkfo embed code here once you create the Cern account -->
-            <div class="bg-zinc-900 rounded-3xl p-8 border border-white/10 min-h-[620px] flex items-center justify-center text-center">
-                <div>
-                    <p class="text-6xl mb-6">🚀</p>
-                    <p class="text-2xl font-medium mb-3">Linkfo Agent – Cern Basher</p>
-                    <p class="max-w-md mx-auto text-white/70">Create the Linkfo account for CernBasher, then drop James’s JavaScript embed here. Visitors will get intelligent Tesla/Elon insights instantly.</p>
-                    <a href="https://linkfo.me" target="_blank"
-                       class="mt-10 inline-block px-8 py-4 bg-white text-black font-semibold rounded-2xl hover:scale-105">
-                        linkfo.me
-                    </a>
+            <a href="https://linkfo.me/cern" target="_blank" class="agent-card">
+                <div style="font-size:64px; margin-bottom:16px;">🤖</div>
+                <h3 style="font-size:1.65rem; margin:0 0 12px 0;">Cern Basher Bot</h3>
+                <p style="color:#aaa; max-width:420px; margin:0 auto 28px;">
+                    Hi, I’m Cern Basher. Ask me anything about Tesla, Robotaxi, Optimus, FSD, xAI and the full Elon ecosystem.
+                </p>
+                <div style="background:rgba(255,255,255,0.08); padding:16px 24px; border-radius:9999px; display:inline-flex; align-items:center; gap:12px; font-size:0.95rem;">
+                    Open Full Chat →
                 </div>
-            </div>
+            </a>
         </div>
     </main>
 
-    <footer class="container py-12 border-t border-white/10 text-center text-xs text-white/30">
-        © Cern Basher • Not financial advice • Built for <a href="https://linkfo.me" class="underline hover:text-white">Linkfo.me</a>
+    <footer style="text-align:center; padding:60px 0; color:#555; font-size:0.85rem;">
+        © Cern Basher • Not financial advice • Built for <a href="https://linkfo.me" style="color:#e11d48;">Linkfo.me</a>
     </footer>
-
-    <!-- X/Twitter Embed Script -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<script>
-    // Force reload widgets after page load
-    window.onload = function() {
-        if (window.twttr && window.twttr.widgets) {
-            window.twttr.widgets.load();
-        }
-    };
-    
-    // Also retry after 2 seconds in case of race condition
-    setTimeout(() => {
-        if (window.twttr && window.twttr.widgets) {
-            window.twttr.widgets.load();
-        }
-    }, 2000);
-</script>
-    
 
     <script>
         function playVideo() {
-            document.getElementById('video-wrapper').classList.add('hidden');
+            const wrapper = document.getElementById('video-wrapper');
             const player = document.getElementById('video-player');
+            wrapper.style.display = 'none';
             player.classList.remove('hidden');
-            player.innerHTML = `
-                <iframe width="100%" height="100%" 
-                    src="https://www.youtube.com/embed/zeG3aJQByWw?autoplay=1&modestbranding=1&rel=0" 
-                    frameborder="0" allowfullscreen></iframe>
-            `;
+            player.innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zeG3aJQByWw?autoplay=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe>`;
         }
     </script>
 </body>
