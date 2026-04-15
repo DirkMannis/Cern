@@ -23,66 +23,91 @@
         .container { 
             max-width: 680px; 
             margin: 0 auto; 
-            padding: 0 28px; 
+            padding: 0 24px; 
         }
         
         header {
-            padding: 40px 0 48px;
+            padding: 28px 0 32px;
             text-align: center;
             border-bottom: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
         }
         
         .tweet-card {
             background: #0f0f0f;
             border: 1px solid rgba(255,255,255,0.06);
             border-radius: 22px;
-            padding: 28px;
-            margin-bottom: 28px;
+            padding: 26px;
+            margin-bottom: 20px;
         }
         
-        /* Embedded Widget Styling */
         .agent-section {
-            margin-top: 80px;
-            padding-top: 40px;
+            margin-top: 48px;
+            padding-top: 32px;
             border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+        }
+        
+        .agent-link {
+            display: inline-block;
+            background: #111;
+            border: 1px solid #e11d48;
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 9999px;
+            font-size: 1.05rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .agent-link:hover {
+            background: #e11d48;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container" style="display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap;">
             <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" 
                  alt="Cern Basher" 
-                 style="width:80px; height:80px; border-radius:9999px; margin-bottom:16px; border:3px solid #e11d48;">
-            <h1 class="header-font" style="font-size:3.2rem; font-weight:700; letter-spacing:-2px; margin:0;">Cern Basher</h1>
-            <p style="color:#e11d48; font-size:0.95rem; letter-spacing:4px; margin-top:8px; font-weight:500;">
-                TESLA • SPACEX • xAI • OPTIMUS
-            </p>
+                 style="width:60px; height:60px; border-radius:9999px; border:3px solid #e11d48;">
+            <div>
+                <h1 class="header-font" style="font-size:2.55rem; font-weight:700; letter-spacing:-1.5px; margin:0;">Cern Basher</h1>
+                <p style="color:#e11d48; font-size:0.95rem; letter-spacing:3px; margin:4px 0 0 0; font-weight:500;">
+                    TESLA • SPACEX • xAI • OPTIMUS
+                </p>
+            </div>
         </div>
     </header>
 
-    <main class="container pb-24">
+    <main class="container" style="padding-top:12px;">
         
         <!-- Latest Video -->
-        <div style="margin-top:60px;">
-            <h2 style="font-size:2.1rem; margin-bottom:20px;">Latest Video</h2>
+        <div style="margin-top:32px;">
+            <h2 style="font-size:2.05rem; margin-bottom:16px;">Latest Video</h2>
             <div id="video-wrapper" onclick="playVideo()" 
                  style="position:relative; cursor:pointer; border-radius:24px; overflow:hidden; background:#111; border:1px solid #222;">
                 <img id="thumbnail" src="https://i.ytimg.com/vi/zeG3aJQByWw/maxresdefault.jpg" 
                      style="width:100%; display:block;">
                 <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4);">
-                    <div style="width:90px; height:90px; background:white; border-radius:9999px; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e11d48" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg>
+                    <div style="width:82px; height:82px; background:white; border-radius:9999px; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#e11d48" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg>
                     </div>
                 </div>
             </div>
             <div id="video-player" class="hidden" style="aspect-ratio:16/9; border-radius:24px; overflow:hidden;"></div>
         </div>
 
-        <!-- Latest on X -->
-        <div style="margin-top:80px;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:28px;">
-                <h2 style="font-size:2.1rem;">Latest on X</h2>
+        <!-- Latest on X - Tighter & Above the Fold -->
+        <div style="margin-top:40px;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:20px;">
+                <h2 style="font-size:2.05rem;">Latest on X</h2>
                 <a href="https://x.com/CernBasher" target="_blank" style="color:#aaa; text-decoration:none;">@CernBasher 𝕏</a>
             </div>
             
@@ -109,22 +134,25 @@
             </div>
         </div>
 
-        <!-- Embedded Cern Basher Bot -->
-        <div class="agent-section container">
-            <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to Cern Basher Bot</h2>
-            
-            <!-- Linkfo Embed Widget -->
-            <script src="https://linkfo.me/embed.js" 
-                    data-username="cern" 
-                    data-position="bottom-right" 
-                    data-color="#e11d48">
-            </script>
+        <!-- Talk to Bot -->
+        <div class="agent-section">
+            <h2 style="font-size:2.05rem; margin-bottom:18px;">Talk to Cern Basher Bot</h2>
+            <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link">
+                Open Chat with Cern →
+            </div>
         </div>
     </main>
 
-    <footer style="text-align:center; padding:60px 0; color:#555; font-size:0.85rem;">
+    <footer style="text-align:center; padding:52px 0; color:#555; font-size:0.85rem;">
         © Cern Basher • Not financial advice • Built for <a href="https://linkfo.me" style="color:#e11d48;">Linkfo.me</a>
     </footer>
+
+    <!-- Embedded Chat Widget - Bottom Right -->
+    <script src="https://linkfo.me/embed.js" 
+            data-username="cern" 
+            data-position="bottom-right" 
+            data-color="#e11d48">
+    </script>
 
     <script>
         function playVideo() {
