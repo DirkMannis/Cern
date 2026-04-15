@@ -38,15 +38,11 @@
         }
         
         .section {
-            margin-top: 32px;           /* Reduced */
+            margin-top: 28px;           /* Overall tight spacing */
         }
         
-        .video-section {
-            margin-top: 24px;           /* Tighter after Bot */
-        }
-        
-        .x-section {
-            margin-top: 28px;           /* Tight after Video */
+        .first-section {
+            margin-top: 20px;           /* Video at the top */
         }
         
         .tweet-card {
@@ -97,16 +93,8 @@
 
     <main class="container" style="padding-top:12px;">
         
-        <!-- 1. Bot -->
-        <div class="section agent-section">
-            <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to Cern Basher Bot</h2>
-            <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link">
-                Open Chat with Cern →
-            </div>
-        </div>
-
-        <!-- 2. Latest Video -->
-        <div class="section video-section">
+        <!-- 1. Latest Video -->
+        <div class="section first-section">
             <h2 style="font-size:2.05rem; margin-bottom:16px;">Latest Video</h2>
             <div id="video-wrapper" onclick="playVideo()" 
                  style="position:relative; cursor:pointer; border-radius:24px; overflow:hidden; background:#111; border:1px solid #222;">
@@ -121,8 +109,16 @@
             <div id="video-player" class="hidden" style="aspect-ratio:16/9; border-radius:24px; overflow:hidden;"></div>
         </div>
 
+        <!-- 2. Cern Basher Bot -->
+        <div class="section agent-section">
+            <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to Cern Basher Bot</h2>
+            <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link">
+                Open Chat with Cern →
+            </div>
+        </div>
+
         <!-- 3. Latest on X -->
-        <div class="section x-section">
+        <div class="section">
             <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:20px;">
                 <h2 style="font-size:2.05rem;">Latest on X</h2>
                 <a href="https://x.com/CernBasher" target="_blank" style="color:#aaa; text-decoration:none;">@CernBasher 𝕏</a>
