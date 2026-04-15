@@ -6,11 +6,6 @@
     <meta name="description" content="Cern Basher — Tesla, SpaceX, xAI, Optimus & the Elon Musk ecosystem. Latest analysis and commentary.">
     <title>Cern Basher</title>
     
-    <!-- Cache bust -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
         
@@ -45,29 +40,11 @@
             margin-bottom: 28px;
         }
         
-        /* === FIXED & IMPROVED AGENT CARD === */
-        .agent-card {
-            background: #111111;
-            border: 1px solid rgba(59, 130, 246, 0.25);
-            border-radius: 24px;
-            padding: 40px 32px;
-            text-align: center;
-            transition: all 0.3s ease;
-            display: block;
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        .agent-card:hover {
-            transform: translateY(-6px);
-            border-color: #3b82f6;
-            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
-        }
-
-        .robot-icon {
-            font-size: 72px;
-            margin-bottom: 20px;
-            display: block;
+        /* Embedded Widget Styling */
+        .agent-section {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.08);
         }
     </style>
 </head>
@@ -132,20 +109,16 @@
             </div>
         </div>
 
-        <!-- Talk to the Agent (Fixed) -->
-        <div style="margin-top:80px; padding-top:40px; border-top:1px solid rgba(255,255,255,0.08);">
-            <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to the Agent</h2>
+        <!-- Embedded Cern Basher Bot -->
+        <div class="agent-section container">
+            <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to Cern Basher Bot</h2>
             
-            <a href="https://linkfo.me/cern" target="_blank" class="agent-card">
-                <div class="robot-icon">🤖</div>
-                <h3 style="font-size:1.8rem; margin:0 0 12px 0;">Cern Basher Bot</h3>
-                <p style="color:#ccc; max-width:420px; margin:0 auto 32px; line-height:1.5;">
-                    Hi, I’m Cern Basher. Ask me anything about Tesla, Robotaxi, Optimus, FSD, xAI and the full Elon ecosystem.
-                </p>
-                <div style="background:#1f1f1f; padding:18px 32px; border-radius:9999px; display:inline-flex; align-items:center; gap:12px; font-size:1rem; font-weight:500; color:#fff;">
-                    Open Full Chat →
-                </div>
-            </a>
+            <!-- Linkfo Embed Widget -->
+            <script src="https://linkfo.me/embed.js" 
+                    data-username="cern" 
+                    data-position="bottom-right" 
+                    data-color="#e11d48">
+            </script>
         </div>
     </main>
 
