@@ -37,6 +37,10 @@
             flex-wrap: wrap;
         }
         
+        .section {
+            margin-top: 40px;
+        }
+        
         .tweet-card {
             background: #0f0f0f;
             border: 1px solid rgba(255,255,255,0.06);
@@ -46,9 +50,6 @@
         }
         
         .agent-section {
-            margin-top: 48px;
-            padding-top: 32px;
-            border-top: 1px solid rgba(255,255,255,0.08);
             text-align: center;
         }
         
@@ -57,9 +58,9 @@
             background: #111;
             border: 1px solid #e11d48;
             color: #fff;
-            padding: 14px 32px;
+            padding: 16px 36px;
             border-radius: 9999px;
-            font-size: 1.05rem;
+            font-size: 1.08rem;
             font-weight: 500;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -67,7 +68,7 @@
         
         .agent-link:hover {
             background: #e11d48;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
     </style>
 </head>
@@ -88,8 +89,16 @@
 
     <main class="container" style="padding-top:12px;">
         
-        <!-- Latest Video -->
-        <div style="margin-top:32px;">
+        <!-- 1. Cern Basher Bot (First) -->
+        <div class="section agent-section">
+            <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to Cern Basher Bot</h2>
+            <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link">
+                Open Chat with Cern →
+            </div>
+        </div>
+
+        <!-- 2. Latest Video -->
+        <div class="section">
             <h2 style="font-size:2.05rem; margin-bottom:16px;">Latest Video</h2>
             <div id="video-wrapper" onclick="playVideo()" 
                  style="position:relative; cursor:pointer; border-radius:24px; overflow:hidden; background:#111; border:1px solid #222;">
@@ -104,14 +113,13 @@
             <div id="video-player" class="hidden" style="aspect-ratio:16/9; border-radius:24px; overflow:hidden;"></div>
         </div>
 
-        <!-- Latest on X - Much tighter spacing -->
-        <div style="margin-top:36px;">
+        <!-- 3. Latest on X -->
+        <div class="section">
             <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:20px;">
                 <h2 style="font-size:2.05rem;">Latest on X</h2>
                 <a href="https://x.com/CernBasher" target="_blank" style="color:#aaa; text-decoration:none;">@CernBasher 𝕏</a>
             </div>
             
-            <!-- Most Recent Post -->
             <div class="tweet-card">
                 <div style="display:flex; gap:14px; margin-bottom:16px;">
                     <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:48px; height:48px; border-radius:9999px;">
@@ -125,7 +133,6 @@
                 </p>
             </div>
 
-            <!-- Second Most Recent Post -->
             <div class="tweet-card">
                 <div style="display:flex; gap:14px; margin-bottom:16px;">
                     <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:48px; height:48px; border-radius:9999px;">
@@ -141,20 +148,13 @@
             </div>
         </div>
 
-        <!-- Talk to Bot -->
-        <div class="agent-section">
-            <h2 style="font-size:2.05rem; margin-bottom:18px;">Talk to Cern Basher Bot</h2>
-            <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link">
-                Open Chat with Cern →
-            </div>
-        </div>
     </main>
 
-    <footer style="text-align:center; padding:52px 0; color:#555; font-size:0.85rem;">
+    <footer style="text-align:center; padding:60px 0; color:#555; font-size:0.85rem;">
         © Cern Basher • Not financial advice • Built for <a href="https://linkfo.me" style="color:#e11d48;">Linkfo.me</a>
     </footer>
 
-    <!-- Embedded Chat Widget - Right Side -->
+    <!-- Floating Chat Widget (Bottom Right) -->
     <script src="https://linkfo.me/embed.js" 
             data-username="cern" 
             data-position="right" 
