@@ -1,0 +1,14 @@
+<svg viewBox="0 0 512 512" height="512" width="512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="grad">
+      <stop stop-color="#e11d48" offset="0%"></stop>
+      <stop stop-color="#9f1239" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  
+  <circle fill="#111111" r="240" cy="256" cx="256"></circle>
+  
+  <circle stroke-width="28" stroke="#e11d48" fill="none" r="180" cy="256" cx="256"></circle>
+  
+  <text text-anchor="middle" fill="#ffffff" font-weight="900" font-size="180" font-family="Arial Black, sans-serif" y="280" x="256">CB</text>
+</svg>
