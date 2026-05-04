@@ -40,23 +40,61 @@
         main.container {
             display: flex;
             flex-direction: column;
-            gap: 2.8rem;
+            gap: 2.0rem;           /* Tighter overall spacing */
             padding-top: 12px;
         }
        
         .section { margin: 0; }
-       
+
+        /* === Latest Videos - More Compact === */
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+        .featured-video {
+            border-radius: 20px;
+            overflow: hidden;
+            background: #111;
+            border: 1px solid #222;
+            position: relative;
+            cursor: pointer;
+            height: 210px;           /* Reduced height */
+        }
+        .small-videos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+        .small-video {
+            border-radius: 16px;
+            overflow: hidden;
+            background: #111;
+            border: 1px solid #222;
+            position: relative;
+            cursor: pointer;
+            height: 148px;           /* Smaller */
+        }
+
+        /* === X Posts - Thinner Cards === */
         .tweet-card {
             background: #0f0f0f;
             border: 1px solid rgba(255,255,255,0.06);
             border-radius: 22px;
-            padding: 26px;
-            margin-bottom: 20px;
+            padding: 20px;
+            margin-bottom: 16px;
         }
        
+        .tweet-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
         .agent-section {
             text-align: center;
-            padding: 48px 32px;
+            padding: 40px 32px;
             border-radius: 28px;
             background: radial-gradient(circle at 50% 30%, rgba(225, 29, 72, 0.22) 0%, rgba(225, 29, 72, 0.06) 50%, transparent 80%);
             border: 1px solid rgba(225, 29, 72, 0.25);
@@ -80,41 +118,21 @@
             transform: translateY(-4px);
         }
        
-        /* Simple Link Cards */
         .simple-link {
             display: block;
             background: #0f0f0f;
             border: 1px solid rgba(255,255,255,0.06);
             border-radius: 22px;
-            padding: 24px 28px;
+            padding: 22px 28px;
             color: #fff;
             text-decoration: none;
             transition: all 0.3s ease;
+            margin-bottom: 12px;
         }
        
         .simple-link:hover {
             background: #1a1a1a;
             border-color: #e11d48;
-            transform: translateY(-2px);
-        }
-       
-        .hidden { display: none; }
-       
-        /* Video Grid */
-        .video-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
-        .featured-video, .small-video {
-            border-radius: 24px;
-            overflow: hidden;
-            background: #111;
-            border: 1px solid #222;
-            position: relative;
-            cursor: pointer;
-        }
-        .small-videos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-       
-        @media (max-width: 640px) {
-            .small-videos { grid-template-columns: 1fr; }
-            main.container { gap: 2rem; }
         }
     </style>
 </head>
@@ -135,44 +153,27 @@
 
     <main class="container">
        
-        <!-- Latest Videos -->
+        <!-- Latest Videos - Compact -->
         <div class="section">
-            <h2 style="font-size:2.05rem; margin-bottom:20px;">Latest Videos</h2>
+            <h2 style="font-size:2.05rem; margin-bottom:18px;">Latest Videos</h2>
             
             <div class="video-grid">
-                <!-- Featured -->
                 <div class="featured-video" onclick="playVideo('JQ9lTXObhmg')">
-                    <img src="https://i.ytimg.com/vi/JQ9lTXObhmg/maxresdefault.jpg" style="width:100%; display:block;">
-                    <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.45);">
-                        <div style="width:90px; height:90px; background:white; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#e11d48" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg>
-                        </div>
-                    </div>
-                    <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px 16px 16px;">
+                    <img src="https://i.ytimg.com/vi/JQ9lTXObhmg/maxresdefault.jpg" style="width:100%; height:100%; object-fit:cover;">
+                    <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:16px;">
                         <p style="font-weight:600; margin:0;">Tesla Just Hit Superhuman Reaction Time</p>
                     </div>
                 </div>
 
-                <!-- Two Smaller -->
                 <div class="small-videos">
                     <div class="small-video" onclick="playVideo('50PK30PWJWk')">
-                        <img src="https://i.ytimg.com/vi/50PK30PWJWk/maxresdefault.jpg" style="width:100%; display:block;">
-                        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4);">
-                            <div style="width:60px; height:60px; background:white; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#e11d48" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg>
-                            </div>
-                        </div>
-                        <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600; margin:0;">Uber Just Made Waymo's Trap Worse</p>
+                        <img src="https://i.ytimg.com/vi/50PK30PWJWk/maxresdefault.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">Uber Just Made Waymo's Trap Worse</p>
                     </div>
 
                     <div class="small-video" onclick="playVideo('IOi0N6RluZU')">
-                        <img src="https://i.ytimg.com/vi/IOi0N6RluZU/maxresdefault.jpg" style="width:100%; display:block;">
-                        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4);">
-                            <div style="width:60px; height:60px; background:white; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#e11d48" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg>
-                            </div>
-                        </div>
-                        <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600; margin:0;">Why This Uber Pivot Won't Work</p>
+                        <img src="https://i.ytimg.com/vi/IOi0N6RluZU/maxresdefault.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">Why This Uber Pivot Won't Work</p>
                     </div>
                 </div>
             </div>
@@ -186,7 +187,7 @@
             </div>
         </div>
 
-        <!-- Latest on X -->
+        <!-- Latest on X - Much Thinner -->
         <div class="section">
             <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:20px;">
                 <h2 style="font-size:2.05rem;">Latest on X</h2>
@@ -194,52 +195,53 @@
             </div>
            
             <div class="tweet-card">
-                <div style="display:flex; gap:14px; margin-bottom:16px;">
-                    <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:48px; height:48px; border-radius:9999px;">
-                    <div>
-                        <div style="font-weight:600;">Cern Basher</div>
-                        <div style="color:#666; font-size:0.9rem;">@CernBasher · 3 May 2026</div>
+                <div class="tweet-header">
+                    <div style="display:flex; gap:12px; align-items:center;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <div>
+                            <div style="font-weight:600;">Cern Basher</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 3 May 2026</div>
+                        </div>
                     </div>
+                    <a href="https://x.com/CernBasher/status/2050969356562014694" target="_blank" style="color:#e11d48; font-size:0.9rem;">View →</a>
                 </div>
-                <p style="font-size:1.08rem; line-height:1.55;">
-                    Another milestone accomplished... we'll be over 17 billion miles by year end.<br>
-                    <a href="https://x.com/CernBasher/status/2050969356562014694" target="_blank" style="color:#e11d48;">View full post →</a>
-                </p>
-            </div>
-            <div class="tweet-card">
-                <div style="display:flex; gap:14px; margin-bottom:16px;">
-                    <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:48px; height:48px; border-radius:9999px;">
-                    <div>
-                        <div style="font-weight:600;">Cern Basher</div>
-                        <div style="color:#666; font-size:0.9rem;">@CernBasher · 2 May 2026</div>
-                    </div>
-                </div>
-                <p style="font-size:1.08rem; line-height:1.55;">
-                    FSD Champion<br>
-                    <a href="https://x.com/CernBasher/status/2050774432788943129" target="_blank" style="color:#e11d48;">View full post →</a>
-                </p>
-            </div>
-            <div class="tweet-card">
-                <div style="display:flex; gap:14px; margin-bottom:16px;">
-                    <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:48px; height:48px; border-radius:9999px;">
-                    <div>
-                        <div style="font-weight:600;">Cern Basher</div>
-                        <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Apr 2026</div>
-                    </div>
-                </div>
-                <p style="font-size:1.08rem; line-height:1.55;">
-                    Who are the Future Wealth Creators?<br>
-                    <a href="https://x.com/CernBasher/status/2044045351267553413" target="_blank" style="color:#e11d48;">View full post →</a>
-                </p>
+                <p style="font-size:1.05rem; line-height:1.45;">Another milestone accomplished... we'll be over 17 billion miles by year end.</p>
             </div>
 
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <div style="display:flex; gap:12px; align-items:center;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <div>
+                            <div style="font-weight:600;">Cern Basher</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 2 May 2026</div>
+                        </div>
+                    </div>
+                    <a href="https://x.com/CernBasher/status/2050774432788943129" target="_blank" style="color:#e11d48; font-size:0.9rem;">View →</a>
+                </div>
+                <p style="font-size:1.05rem; line-height:1.45;">FSD Champion</p>
+            </div>
+
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <div style="display:flex; gap:12px; align-items:center;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <div>
+                            <div style="font-weight:600;">Cern Basher</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Apr 2026</div>
+                        </div>
+                    </div>
+                    <a href="https://x.com/CernBasher/status/2044045351267553413" target="_blank" style="color:#e11d48; font-size:0.9rem;">View →</a>
+                </div>
+                <p style="font-size:1.05rem; line-height:1.45;">Who are the Future Wealth Creators?</p>
+            </div>
         </div>
 
         <!-- Links -->
         <div class="section">
             <h2 style="font-size:2.05rem; margin-bottom:20px;">More Resources</h2>
             
-            <a href="https://brilliantadvice.net/" target="_blank" class="simple-link" style="margin-bottom:16px;">
+            <a href="https://brilliantadvice.net/" target="_blank" class="simple-link">
                 <strong>Brilliant Advice</strong><br>
                 <span style="color:#aaa; font-size:0.95rem;">Wealth Management Services</span>
             </a>
@@ -256,11 +258,7 @@
         © Cern Basher • Not financial advice • Built for <a href="https://linkfo.me" style="color:#e11d48;">Linkfo.me</a>
     </footer>
 
-    <script src="https://linkfo.me/embed.js"
-            data-username="cern"
-            data-position="right"
-            data-color="#e11d48">
-    </script>
+    <script src="https://linkfo.me/embed.js" data-username="cern" data-position="right" data-color="#e11d48"></script>
 
     <script>
         function playVideo(videoId) {
