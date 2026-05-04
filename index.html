@@ -40,13 +40,13 @@
         main.container {
             display: flex;
             flex-direction: column;
-            gap: 2.0rem;           /* Tighter overall spacing */
+            gap: 1.8rem;           /* Reduced spacing between sections */
             padding-top: 12px;
         }
        
         .section { margin: 0; }
 
-        /* === Latest Videos - More Compact === */
+        /* === Videos - Featured taller, small ones compact === */
         .video-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -59,7 +59,7 @@
             border: 1px solid #222;
             position: relative;
             cursor: pointer;
-            height: 210px;           /* Reduced height */
+            height: 260px;           /* Taller featured video */
         }
         .small-videos {
             display: grid;
@@ -73,10 +73,16 @@
             border: 1px solid #222;
             position: relative;
             cursor: pointer;
-            height: 148px;           /* Smaller */
+            height: 148px;
         }
 
-        /* === X Posts - Thinner Cards === */
+        h2 {
+            font-size: 1.95rem;        /* Slightly smaller headings */
+            margin: 42px 0 20px;
+            text-align: center;
+        }
+
+        /* X Posts - Thin & Clean */
         .tweet-card {
             background: #0f0f0f;
             border: 1px solid rgba(255,255,255,0.06);
@@ -94,7 +100,7 @@
 
         .agent-section {
             text-align: center;
-            padding: 40px 32px;
+            padding: 38px 32px;
             border-radius: 28px;
             background: radial-gradient(circle at 50% 30%, rgba(225, 29, 72, 0.22) 0%, rgba(225, 29, 72, 0.06) 50%, transparent 80%);
             border: 1px solid rgba(225, 29, 72, 0.25);
@@ -153,9 +159,9 @@
 
     <main class="container">
        
-        <!-- Latest Videos - Compact -->
+        <!-- Latest Videos -->
         <div class="section">
-            <h2 style="font-size:2.05rem; margin-bottom:18px;">Latest Videos</h2>
+            <h2>Latest Videos</h2>
             
             <div class="video-grid">
                 <div class="featured-video" onclick="playVideo('JQ9lTXObhmg')">
@@ -181,16 +187,16 @@
 
         <!-- Agent -->
         <div class="section agent-section">
-            <h2 style="font-size:2.1rem; margin-bottom:20px;">Talk to Cern Basher Agent</h2>
+            <h2>Talk to Cern Basher Agent</h2>
             <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link">
                 Cern Basher Agent Available Now →
             </div>
         </div>
 
-        <!-- Latest on X - Much Thinner -->
+        <!-- Latest on X -->
         <div class="section">
             <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:20px;">
-                <h2 style="font-size:2.05rem;">Latest on X</h2>
+                <h2>Latest on X</h2>
                 <a href="https://x.com/CernBasher" target="_blank" style="color:#aaa; text-decoration:none;">@CernBasher 𝕏</a>
             </div>
            
@@ -203,7 +209,7 @@
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 3 May 2026</div>
                         </div>
                     </div>
-                    <a href="https://x.com/CernBasher/status/2050969356562014694" target="_blank" style="color:#e11d48; font-size:0.9rem;">View →</a>
+                    <a href="https://x.com/CernBasher/status/2050969356562014694" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <p style="font-size:1.05rem; line-height:1.45;">Another milestone accomplished... we'll be over 17 billion miles by year end.</p>
             </div>
@@ -217,7 +223,7 @@
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 2 May 2026</div>
                         </div>
                     </div>
-                    <a href="https://x.com/CernBasher/status/2050774432788943129" target="_blank" style="color:#e11d48; font-size:0.9rem;">View →</a>
+                    <a href="https://x.com/CernBasher/status/2050774432788943129" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <p style="font-size:1.05rem; line-height:1.45;">FSD Champion</p>
             </div>
@@ -231,7 +237,7 @@
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Apr 2026</div>
                         </div>
                     </div>
-                    <a href="https://x.com/CernBasher/status/2044045351267553413" target="_blank" style="color:#e11d48; font-size:0.9rem;">View →</a>
+                    <a href="https://x.com/CernBasher/status/2044045351267553413" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <p style="font-size:1.05rem; line-height:1.45;">Who are the Future Wealth Creators?</p>
             </div>
@@ -239,7 +245,7 @@
 
         <!-- Links -->
         <div class="section">
-            <h2 style="font-size:2.05rem; margin-bottom:20px;">More Resources</h2>
+            <h2>More Resources</h2>
             
             <a href="https://brilliantadvice.net/" target="_blank" class="simple-link">
                 <strong>Brilliant Advice</strong><br>
