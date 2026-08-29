@@ -52,15 +52,22 @@
             grid-template-columns: 1fr;
             gap: 18px;
         }
-        .featured-video {
-            border-radius: 20px;
-            overflow: hidden;
-            background: #111;
-            border: 1px solid #222;
-            position: relative;
-            cursor: pointer;
-            height: 245px;           /* Slightly taller again */
-        }
+.featured-video {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #111;
+    border: 1px solid #222;
+    position: relative;
+    cursor: pointer;
+    aspect-ratio: 16 / 9;   /* ← better than fixed height */
+    width: 100%;
+}
+.featured-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
         .small-videos {
             display: grid;
             grid-template-columns: 1fr 1fr;
