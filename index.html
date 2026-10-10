@@ -129,6 +129,12 @@
             border: 1px solid rgba(225, 29, 72, 0.25);
         }
        
+        .x-controls { display:none; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:22px; }
+        .js-x .x-controls { display:flex; }
+        .x-btn { background:#111; border:1px solid #e11d48; color:#fff; padding:12px 28px; border-radius:9999px; font-size:1rem; font-weight:500; cursor:pointer; font-family:inherit; }
+        .x-btn:hover, .x-btn[aria-expanded="true"] { background:#e11d48; }
+        .x-btn:focus-visible { outline:2px solid #fff; outline-offset:2px; }
+        .tweet-card.x-hidden { display:none; }
         .agent-link {
             display: inline-block;
             background: #111;
@@ -196,22 +202,22 @@
             <h2>Latest Videos</h2>
             
             <div class="video-grid">
-                <div class="featured-video" onclick="playVideo('7maaxxgvkKk')">
-                    <img src="https://i.ytimg.com/vi/7maaxxgvkKk/maxresdefault.jpg" alt="The Tesla Semi Era Starts Now" style="width:100%; height:100%; object-fit:cover;">
+                <div class="featured-video" onclick="playVideo('GskKia2Ci1E')">
+                    <img src="https://i.ytimg.com/vi/GskKia2Ci1E/maxresdefault.jpg" alt="The Math Behind the Tesla Semi&#39;s Price" style="width:100%; height:100%; object-fit:cover;">
                     <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:16px;">
-                        <p style="font-weight:600; margin:0;">The Tesla Semi Era Starts Now</p>
+                        <p style="font-weight:600; margin:0;">The Math Behind the Tesla Semi&#39;s Price</p>
                     </div>
                 </div>
 
                 <div class="small-videos">
+                    <div class="small-video" onclick="playVideo('7maaxxgvkKk')">
+                        <img src="https://i.ytimg.com/vi/7maaxxgvkKk/maxresdefault.jpg" alt="The Tesla Semi Era Starts Now" style="width:100%; height:100%; object-fit:cover;">
+                        <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">The Tesla Semi Era Starts Now</p>
+                    </div>
+
                     <div class="small-video" onclick="playVideo('xxmnqUFghbM')">
                         <img src="https://i.ytimg.com/vi/xxmnqUFghbM/maxresdefault.jpg" alt="The Federal Shift That Changes Cybercab's Odds" style="width:100%; height:100%; object-fit:cover;">
                         <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">The Federal Shift That Changes Cybercab's Odds</p>
-                    </div>
-
-                    <div class="small-video" onclick="playVideo('BZEW5cyheyE')">
-                        <img src="https://i.ytimg.com/vi/BZEW5cyheyE/maxresdefault.jpg" alt="Where Tesla's Robotaxi Network Actually Wins" style="width:100%; height:100%; object-fit:cover;">
-                        <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">Where Tesla's Robotaxi Network Actually Wins</p>
                     </div>
                 </div>
             </div>
@@ -571,6 +577,10 @@
                 <p style="font-size:1.05rem; line-height:1.45;">The Cybercab Era Begins</p>
             </div>
 
+            <div class="x-controls" id="x-controls">
+                <button type="button" class="x-btn" id="x-more" aria-expanded="false" aria-controls="latest-on-x">Show more posts</button>
+                <button type="button" class="x-btn" id="x-articles" aria-expanded="false" aria-controls="latest-on-x">Show top articles</button>
+            </div>
         </div>
 
 </div>
@@ -607,6 +617,36 @@
         function playVideo(videoId) {
             window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
         }
+        (function () {
+            var sec = document.getElementById('latest-on-x');
+            if (!sec) return;
+            var cards = Array.prototype.slice.call(sec.querySelectorAll('.tweet-card'));
+            var LIMIT = 8;
+            if (cards.length <= LIMIT && !sec.querySelector('a[href*="/i/article/"]')) return;
+            var more = document.getElementById('x-more'), arts = document.getElementById('x-articles');
+            var mode = 'recent';
+            function isArticle(c) { return !!c.querySelector('a[href*="/i/article/"]'); }
+            function render() {
+                cards.forEach(function (c, i) {
+                    var show = mode === 'all' ? true : mode === 'articles' ? isArticle(c) : i < LIMIT;
+                    c.classList.toggle('x-hidden', !show);
+                });
+                more.setAttribute('aria-expanded', mode === 'all' ? 'true' : 'false');
+                more.textContent = mode === 'all' ? 'Show fewer' : 'Show more posts';
+                arts.setAttribute('aria-expanded', mode === 'articles' ? 'true' : 'false');
+                arts.textContent = mode === 'articles' ? 'Show recent' : 'Show top articles';
+                more.hidden = cards.length <= LIMIT;
+            }
+            more.addEventListener('click', function () { mode = mode === 'all' ? 'recent' : 'all'; render(); });
+            arts.addEventListener('click', function () {
+                var wasOpen = mode !== 'recent';
+                mode = mode === 'articles' ? 'recent' : 'articles'; render();
+                if (wasOpen) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            more.addEventListener('click', function () { if (mode === 'recent') sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+            sec.classList.add('js-x');
+            render();
+        })();
     </script>
 
     <!-- Vercel Web Analytics -->
