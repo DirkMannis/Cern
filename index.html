@@ -8,6 +8,7 @@
     <meta name="google-site-verification" content="UBngxhBolSE3OfwAboQpqh5HlbKwSWJpwepn839rxZA" />
     <title>Cern Basher | Tesla, SpaceX &amp; Optimus Videos and X Posts</title>
     <meta name="description" content="Cern Basher's latest YouTube videos and X posts on Tesla, SpaceX, xAI, Cybercab and Optimus. Unofficial fan index. Not affiliated. Not financial advice.">
+    <meta name="keywords" content="Cern Basher, Tesla, SpaceX, xAI, Cybercab, Robotaxi, Optimus, FSD, Tesla Semi, Starlink">
     <meta name="robots" content="index, follow, max-image-preview:large">
             <link rel="icon" href="/image/favicon.svg" type="image/svg+xml">
     <link rel="canonical" href="https://www.cernbasher.com/">
@@ -18,12 +19,15 @@
     <meta property="og:site_name" content="Cern Basher (unofficial fan index)">
     <meta property="og:locale" content="en_US">
     <meta property="og:image:alt" content="Cern Basher profile photo">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
     <meta property="og:image" content="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Cern Basher | Tesla, SpaceX &amp; Optimus Videos and X Posts">
     <meta name="twitter:description" content="Cern Basher's latest YouTube videos and X posts on Tesla, SpaceX, xAI, Cybercab and Optimus. Unofficial fan index. Not affiliated. Not financial advice.">
     <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg">
     <meta name="twitter:image:alt" content="Cern Basher profile photo">
+    <meta name="twitter:site" content="@CernBasher">
     <meta name="twitter:creator" content="@CernBasher">
     <script type="application/ld+json">
     {"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://www.cernbasher.com/#website", "name": "Cern Basher (unofficial fan index)", "url": "https://www.cernbasher.com/", "description": "Cern Basher's latest YouTube videos and X posts on Tesla, SpaceX, xAI, Cybercab and Optimus. Unofficial fan index. Not affiliated. Not financial advice.", "creator": {"@type": "Organization", "name": "Linkfo.me"}}, {"@type": "CollectionPage", "@id": "https://www.cernbasher.com/#webpage", "name": "Cern Basher | Tesla, SpaceX & Optimus Videos and X Posts", "description": "Cern Basher's latest YouTube videos and X posts on Tesla, SpaceX, xAI, Cybercab and Optimus. Unofficial fan index. Not affiliated. Not financial advice.", "url": "https://www.cernbasher.com/", "isPartOf": {"@id": "https://www.cernbasher.com/#website"}, "about": {"@type": "Person", "@id": "https://www.cernbasher.com/#cernbasher", "name": "Cern Basher", "sameAs": ["https://x.com/CernBasher", "https://www.youtube.com/@CernBasher"]}}, {"@type": "FAQPage", "@id": "https://www.cernbasher.com/#faq", "mainEntity": [{"@type": "Question", "name": "Who is Cern Basher?", "acceptedAnswer": {"@type": "Answer", "text": "Cern Basher is an independent investor and analyst who posts YouTube videos and X Articles about Tesla, SpaceX, xAI, Cybercab robotaxis, Optimus, Megapack and energy storage, and related topics."}}, {"@type": "Question", "name": "What is this page?", "acceptedAnswer": {"@type": "Answer", "text": "This page is an unofficial, fan-run index of Cern Basher's latest YouTube videos and original X posts and Articles. It is updated as new content appears, and every link goes to his YouTube channel or his X profile, @CernBasher. This site is not affiliated with Cern Basher or Brilliant Advice, and nothing here is financial advice."}}, {"@type": "Question", "name": "Where does Cern Basher post?", "acceptedAnswer": {"@type": "Answer", "text": "Cern Basher posts videos on his YouTube channel, youtube.com/@CernBasher, and posts and Articles on X as @CernBasher. This page links to both."}}, {"@type": "Question", "name": "Is this site official or financial advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. This is an unofficial, fan-run site. It is not affiliated with Cern Basher or Brilliant Advice, and nothing here is financial advice."}}]}]}
@@ -176,6 +180,16 @@
             background: #1a1a1a;
             border-color: #e11d48;
         }
+
+        img { max-width: 100%; height: auto; }
+        @media (max-width: 640px) {
+            .container { padding: 0 14px; }
+            header h1 { font-size: 2rem !important; }
+            .small-videos { grid-template-columns: 1fr !important; }
+            .tweet-card { padding: 14px; overflow-wrap: anywhere; }
+            .tweet-header { flex-wrap: wrap; gap: 8px; }
+            .tweet-card img { max-width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -183,7 +197,7 @@
         <div class="container">
             <div style="display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap;">
                 <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg"
-                     alt="Cern Basher"
+                     alt="Cern Basher profile photo" width="60" height="60" decoding="async"
                      style="width:60px; height:60px; border-radius:9999px; border:3px solid #e11d48;">
                 <div>
                     <h1 class="header-font" style="font-size:2.55rem; font-weight:700; letter-spacing:-1.5px; margin:0;">Cern Basher</h1>
@@ -209,21 +223,21 @@
             <h2>Latest Videos</h2>
             
             <div class="video-grid">
-                <div class="featured-video" onclick="playVideo('lmui_l8dszA')">
-                    <img src="https://i.ytimg.com/vi/lmui_l8dszA/maxresdefault.jpg" alt="SpaceX&#39;s Buildout Is Bigger Than It Looks" style="width:100%; height:100%; object-fit:cover;">
+                <div class="featured-video" role="button" tabindex="0" aria-label="Play video" onclick="playVideo('lmui_l8dszA')">
+                    <img src="https://i.ytimg.com/vi/lmui_l8dszA/maxresdefault.jpg" alt="Video thumbnail: SpaceX&#39;s Buildout Is Bigger Than It Looks" width="1280" height="720" decoding="async" style="width:100%; height:100%; object-fit:cover;">
                     <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:16px;">
                         <p style="font-weight:600; margin:0;">SpaceX&#39;s Buildout Is Bigger Than It Looks</p>
                     </div>
                 </div>
 
                 <div class="small-videos">
-                    <div class="small-video" onclick="playVideo('NJ6EZ7VnDck')">
-                        <img src="https://i.ytimg.com/vi/NJ6EZ7VnDck/maxresdefault.jpg" alt="Where Tesla&#39;s Cybercab Rollout Actually Stands" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="small-video" role="button" tabindex="0" aria-label="Play video" onclick="playVideo('NJ6EZ7VnDck')">
+                        <img src="https://i.ytimg.com/vi/NJ6EZ7VnDck/maxresdefault.jpg" alt="Video thumbnail: Where Tesla&#39;s Cybercab Rollout Actually Stands" width="1280" height="720" decoding="async" style="width:100%; height:100%; object-fit:cover;">
                         <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">Where Tesla&#39;s Cybercab Rollout Actually Stands</p>
                     </div>
 
-                    <div class="small-video" onclick="playVideo('hc_Bws1dJCE')">
-                        <img src="https://i.ytimg.com/vi/hc_Bws1dJCE/maxresdefault.jpg" alt="What the Roadster Reveals About Tesla &amp; SpaceX" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="small-video" role="button" tabindex="0" aria-label="Play video" onclick="playVideo('hc_Bws1dJCE')">
+                        <img src="https://i.ytimg.com/vi/hc_Bws1dJCE/maxresdefault.jpg" alt="Video thumbnail: What the Roadster Reveals About Tesla &amp; SpaceX" width="1280" height="720" decoding="async" style="width:100%; height:100%; object-fit:cover;">
                         <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">What the Roadster Reveals About Tesla &amp; SpaceX</p>
                     </div>
                 </div>
@@ -233,7 +247,7 @@
         <!-- Agent -->
         <div class="section agent-section">
             <h2>Talk to Cern Basher Agent</h2>
-            <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link">
+            <div onclick="window.open('https://linkfo.me/cern', '_blank')" class="agent-link" role="link" tabindex="0" aria-label="Open Cern Basher Agent on Linkfo" onkeydown="if(event.key==='Enter')this.click()">
                 Cern Basher Agent Available Now →
             </div>
         </div>
@@ -242,12 +256,12 @@
         <div class="section" id="latest-on-x">
             <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;">
                 <h2>Latest on X</h2>
-                <a href="https://x.com/CernBasher" target="_blank" style="color:#aaa; text-decoration:none;">@CernBasher 𝕏</a>
+                <a href="https://x.com/CernBasher" target="_blank" rel="noopener" aria-label="Cern Basher on X (@CernBasher)" style="color:#aaa; text-decoration:none;">@CernBasher 𝕏</a>
             </div>
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 28 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -256,7 +270,7 @@
                     <a href="https://x.com/i/article/2115610355233660928" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2115610355233660928" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HVwwRiiWYAAIOkO.jpg" alt="California Robotaxi: What Is Holding Up Approval?" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HVwwRiiWYAAIOkO.jpg" alt="Cover image for X post: California Robotaxi: What Is Holding Up Approval?" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">California Robotaxi: What Is Holding Up Approval?</p>
             </div>
@@ -264,7 +278,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 27 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -273,7 +287,7 @@
                     <a href="https://x.com/i/article/2115125014420770816" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2115125014420770816" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HVp_9wZWcAECpCr.jpg" alt="If AI Creates Abundance, Does That Make Bitcoin Useless or More Useful?" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HVp_9wZWcAECpCr.jpg" alt="Cover image for X post: If AI Creates Abundance, Does That Make Bitcoin Useless or More Useful?" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">If AI Creates Abundance, Does That Make Bitcoin Useless or More Useful?</p>
             </div>
@@ -281,7 +295,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 26 Oct 2026</div>
@@ -290,7 +304,7 @@
                     <a href="https://x.com/CernBasher/status/2114707735476412436" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2114707735476412436" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HVjzdLtXYAALYMl.jpg" alt="SpaceX Just Unlocked a Powerful Formula for Funding AI Growth" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HVjzdLtXYAALYMl.jpg" alt="Cover image for X post: SpaceX Just Unlocked a Powerful Formula for Funding AI Growth" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">SpaceX Just Unlocked a Powerful Formula for Funding AI Growth</p>
             </div>
@@ -298,7 +312,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 25 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -307,7 +321,7 @@
                     <a href="https://x.com/i/article/2110192239552909312" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2110192239552909312" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUjvxpYXUAAiFQC.jpg" alt="The Future Is Worth More Than Zero: Why Wall Street Undervalues Innovation" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUjvxpYXUAAiFQC.jpg" alt="Cover image for X post: The Future Is Worth More Than Zero: Why Wall Street Undervalues Innovation" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The Future Is Worth More Than Zero: Why Wall Street Undervalues Innovation</p>
             </div>
@@ -315,7 +329,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 23 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -324,7 +338,7 @@
                     <a href="https://x.com/i/article/2113821099414675456" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2113821099414675456" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HVXPKFYWQAA9AKl.jpg" alt="What is Future Growth Worth?" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HVXPKFYWQAA9AKl.jpg" alt="Cover image for X post: What is Future Growth Worth?" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">What is Future Growth Worth?</p>
             </div>
@@ -332,7 +346,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 22 Oct 2026</div>
@@ -341,7 +355,7 @@
                     <a href="https://x.com/CernBasher/status/2113310948832227546" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2113310948832227546" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HVP8vDyXoAA221Y.png" alt="Say what you will about Tesla's Q3 earnings call, but I heard many things to be excited about" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HVP8vDyXoAA221Y.png" alt="Cover image for X post: Say what you will about Tesla's Q3 earnings call, but I heard many things to be excited about" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Say what you will about Tesla&#39;s Q3 earnings call (I won&#39;t disagree with you), but I heard many things to be excited about...</p>
             </div>
@@ -349,7 +363,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 20 Oct 2026</div>
@@ -363,7 +377,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 19 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -372,7 +386,7 @@
                     <a href="https://x.com/i/article/2112360387215568896" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2112360387215568896" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HVCdtPwWEAAJiQe.jpg" alt="ARK Invest's $4,400 Tesla Price Target: $17.5 Trillion for Autonomous Machines" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HVCdtPwWEAAJiQe.jpg" alt="Cover image for X post: ARK Invest's $4,400 Tesla Price Target: $17.5 Trillion for Autonomous Machines" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">ARK Invest's $4,400 Tesla Price Target: $17.5 Trillion for Autonomous Machines</p>
             </div>
@@ -380,7 +394,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 19 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -389,7 +403,7 @@
                     <a href="https://x.com/i/article/2110505195746775040" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2110505195746775040" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUoFfLAWsAAzbmP.jpg" alt="Every Child in the USA Gets 1 Share of SpaceX" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUoFfLAWsAAzbmP.jpg" alt="Cover image for X post: Every Child in the USA Gets 1 Share of SpaceX" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Every Child in the USA Gets 1 Share of SpaceX</p>
             </div>
@@ -397,7 +411,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 18 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -406,7 +420,7 @@
                     <a href="https://x.com/i/article/2111927569306062848" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2111927569306062848" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HU8VcixXMAISldU.jpg" alt="From Evel Knievel to Tesla's Flying Roadster: Can a Car Jump the Snake River and Grand Canyon?" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HU8VcixXMAISldU.jpg" alt="Cover image for X post: From Evel Knievel to Tesla's Flying Roadster: Can a Car Jump the Snake River and Grand Canyon?" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">From Evel Knievel to Tesla's Flying Roadster: Can a Car Jump the Snake River and Grand Canyon?</p>
             </div>
@@ -414,7 +428,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 17 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -423,7 +437,7 @@
                     <a href="https://x.com/i/article/2111630352502362112" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2111630352502362112" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HU4E6S6XoAAjn2Z.jpg" alt="The Roadster Secret Lars Isn't Ready to Reveal" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HU4E6S6XoAAjn2Z.jpg" alt="Cover image for X post: The Roadster Secret Lars Isn't Ready to Reveal" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The Roadster Secret Lars Isn't Ready to Reveal</p>
             </div>
@@ -431,7 +445,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 17 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -440,7 +454,7 @@
                     <a href="https://x.com/i/article/2111168153757904896" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2111168153757904896" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUxkprtXMAAhNS6.jpg" alt="Roadster's Hidden Breakthrough: The Motors" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUxkprtXMAAhNS6.jpg" alt="Cover image for X post: Roadster's Hidden Breakthrough: The Motors" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Roadster's Hidden Breakthrough: The Motors</p>
             </div>
@@ -448,7 +462,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 16 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -457,7 +471,7 @@
                     <a href="https://x.com/i/article/2111076053917593600" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2111076053917593600" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUwMh_RXQAAM3iy.jpg" alt="Roadster: The Specifications Are Almost Unbelievable" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUwMh_RXQAAM3iy.jpg" alt="Cover image for X post: Roadster: The Specifications Are Almost Unbelievable" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Roadster: The Specifications Are Almost Unbelievable</p>
             </div>
@@ -465,7 +479,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -474,7 +488,7 @@
                     <a href="https://x.com/i/article/2110910822041927680" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2110910822041927680" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUt_z3vXYAAZ3IH.jpg" alt="Tesla's New Roadster!" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUt_z3vXYAAZ3IH.jpg" alt="Cover image for X post: Tesla's New Roadster!" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Tesla's New Roadster!</p>
             </div>
@@ -482,7 +496,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -491,7 +505,7 @@
                     <a href="https://x.com/i/article/2110380157303209984" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2110380157303209984" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUnLnhYWEAAoTUA.jpg" alt="69ish Questions for Tesla's Roadster Reveal" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUnLnhYWEAAoTUA.jpg" alt="Cover image for X post: 69ish Questions for Tesla's Roadster Reveal" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">69ish Questions for Tesla's Roadster Reveal</p>
             </div>
@@ -499,7 +513,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 13 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -508,7 +522,7 @@
                     <a href="https://x.com/i/article/2110138159124160512" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2110138159124160512" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUi8VgGXIAAEkS8.jpg" alt="Strive and Strategy: A One-Two Punch for the Future of Income Investing" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUi8VgGXIAAEkS8.jpg" alt="Cover image for X post: Strive and Strategy: A One-Two Punch for the Future of Income Investing" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Strive and Strategy: A One-Two Punch for the Future of Income Investing</p>
             </div>
@@ -516,7 +530,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 12 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -525,7 +539,7 @@
                     <a href="https://x.com/i/article/2101093122541342720" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2101093122541342720" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HStngXSXIAAxecg.jpg" alt="Tesla May Care More About Revenue Per Hour Than Revenue Per Mile" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HStngXSXIAAxecg.jpg" alt="Cover image for X post: Tesla May Care More About Revenue Per Hour Than Revenue Per Mile" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Tesla May Care More About Revenue Per Hour Than Revenue Per Mile</p>
             </div>
@@ -533,7 +547,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 11 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -542,7 +556,7 @@
                     <a href="https://x.com/i/article/2108892042549919745" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2108892042549919745" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HURLh1sWUAEYhMq.jpg" alt="Digital Optimus vs Grok Bot" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HURLh1sWUAEYhMq.jpg" alt="Cover image for X post: Digital Optimus vs Grok Bot" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Digital Optimus vs Grok Bot</p>
             </div>
@@ -550,7 +564,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 10 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -559,7 +573,7 @@
                     <a href="https://x.com/i/article/2108881604760240128" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2108881604760240128" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HURFsnMWwAAtHKX.jpg" alt="AI Agents Will Change the Rules of Capitalism" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HURFsnMWwAAtHKX.jpg" alt="Cover image for X post: AI Agents Will Change the Rules of Capitalism" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">AI Agents Will Change the Rules of Capitalism</p>
             </div>
@@ -567,7 +581,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 9 Oct 2026</div>
@@ -576,7 +590,7 @@
                     <a href="https://x.com/CernBasher/status/2108551769240314351" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2108551769240314351" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUMSeaQXcAARtiA.png" alt="420 Model Y's and 319 Cybercabs" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUMSeaQXcAARtiA.png" alt="Cover image for X post: 420 Model Y's and 319 Cybercabs" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">420 Model Y&#39;s and 319 Cybercabs</p>
             </div>
@@ -584,7 +598,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 7 Oct 2026</div>
@@ -593,7 +607,7 @@
                     <a href="https://x.com/CernBasher/status/2107895152211624307" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2107895152211624307" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HUC_UQcXIAAYcQl.jpg" alt="A speculative sign that FSD licensing talks are back on with Ford" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HUC_UQcXIAAYcQl.jpg" alt="Cover image for X post: A speculative sign that FSD licensing talks are back on with Ford" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">If you&#39;re looking for a speculative sign that FSD licensing talks are back on with Ford, here it is...</p>
             </div>
@@ -601,7 +615,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 6 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -610,7 +624,7 @@
                     <a href="https://x.com/i/article/2107476165183102977" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2107476165183102977" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HT_4oWcXsAAHiOS.jpg" alt="The Option Value of Optimus" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HT_4oWcXsAAHiOS.jpg" alt="Cover image for X post: The Option Value of Optimus" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The Option Value of Optimus: New Capabilities Make the Robot Exponentially More Valuable</p>
             </div>
@@ -618,7 +632,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 4 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -627,7 +641,7 @@
                     <a href="https://x.com/i/article/2106806307085017088" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2106806307085017088" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HTzh7N1XUAEVm9G.jpg" alt="Artificial Intelligence or Super Intelligence?" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HTzh7N1XUAEVm9G.jpg" alt="Cover image for X post: Artificial Intelligence or Super Intelligence?" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Artificial Intelligence or Super Intelligence?</p>
             </div>
@@ -635,7 +649,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 2 Oct 2026</div>
@@ -644,7 +658,7 @@
                     <a href="https://x.com/CernBasher/status/2106034065077879267" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2106034065077879267" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HToZwG-WMAAKJ6L.jpg" alt="Tesla's Massive Impact as of Q3 2026" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HToZwG-WMAAKJ6L.jpg" alt="Cover image for X post: Tesla's Massive Impact as of Q3 2026" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Tesla's Massive Impact as of Q3 2026</p>
             </div>
@@ -652,7 +666,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 29 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -661,7 +675,7 @@
                     <a href="https://x.com/i/article/2104913584136376320" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2104913584136376320" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HTYsyxHWQAAnsBd.jpg" alt="Tesla Just Patented a Car That Sucks Itself to the Road" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HTYsyxHWQAAnsBd.jpg" alt="Cover image for X post: Tesla Just Patented a Car That Sucks Itself to the Road" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Tesla Just Patented a Car That Sucks Itself to the Road</p>
             </div>
@@ -669,7 +683,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 28 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -678,7 +692,7 @@
                     <a href="https://x.com/i/article/2104405597584052224" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2104405597584052224" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HTRqEFkWEAAEpJA.jpg" alt="AI Could Destroy the Terminal Value of Companies while Exploding the Value of the Economy" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HTRqEFkWEAAEpJA.jpg" alt="Cover image for X post: AI Could Destroy the Terminal Value of Companies while Exploding the Value of the Economy" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">AI Could Destroy the Terminal Value of Companies while Exploding the Value of the Economy</p>
             </div>
@@ -686,7 +700,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 25 Sep 2026</div>
@@ -695,7 +709,7 @@
                     <a href="https://x.com/CernBasher/status/2103321586526765559" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2103321586526765559" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HTB-vyFXIAA9N1L.jpg" alt="The annual fuel savings from the Tesla Semi are extraordinary…" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HTB-vyFXIAA9N1L.jpg" alt="Cover image for X post: The annual fuel savings from the Tesla Semi are extraordinary…" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The annual fuel savings from the Tesla Semi are extraordinary…</p>
             </div>
@@ -703,7 +717,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 24 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -712,7 +726,7 @@
                     <a href="https://x.com/i/article/2103143458625957888" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2103143458625957888" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HS_d9ogWMAAyp_y.jpg" alt="Tesla Robotrucking - A Semi-Large Opportunity" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HS_d9ogWMAAyp_y.jpg" alt="Cover image for X post: Tesla Robotrucking - A Semi-Large Opportunity" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Tesla Robotrucking - A Semi-Large Opportunity</p>
             </div>
@@ -720,7 +734,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 23 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -729,7 +743,7 @@
                     <a href="https://x.com/i/article/2099512816801562625" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2099512816801562625" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HSiRsszbwAAWvIz.jpg" alt="Cybercab: The Hard Part After Autonomy" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HSiRsszbwAAWvIz.jpg" alt="Cover image for X post: Cybercab: The Hard Part After Autonomy" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Cybercab: The Hard Part After Autonomy</p>
             </div>
@@ -737,7 +751,7 @@
                                                             <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 21 Sep 2026</div>
@@ -746,7 +760,7 @@
                     <a href="https://x.com/CernBasher/status/2102188875036631254" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2102188875036631254" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/amplify_video_thumb/2102164689610567680/img/gVfnwXo8zx2RLOjM.jpg" alt="First public look at privately owned Cybercab software" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/amplify_video_thumb/2102164689610567680/img/gVfnwXo8zx2RLOjM.jpg" alt="Cover image for X post: First public look at privately owned Cybercab software" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">First public look at privately owned Cybercab software</p>
             </div>
@@ -754,7 +768,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 21 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -763,7 +777,7 @@
                     <a href="https://x.com/i/article/2101873512650547202" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2101873512650547202" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HStlMVwXcAEi4Ts?format=jpg&name=small" alt="Tesla's $10B Texas Solar Plant - a Robotaxi & Optimus Power Plant?" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HStlMVwXcAEi4Ts?format=jpg&name=small" alt="Cover image for X post: Tesla's $10B Texas Solar Plant - a Robotaxi & Optimus Power Plant?" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Tesla's $10B Texas Solar Plant - a Robotaxi & Optimus Power Plant?</p>
             </div>
@@ -771,7 +785,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 21 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -780,7 +794,7 @@
                     <a href="https://x.com/i/article/2101054905192534018" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2101054905192534018" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HSn_kJWXcAAPbmI?format=jpg&name=small" alt="China's Humanoid Machine: The Companies Behind Tesla Optimus" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HSn_kJWXcAAPbmI?format=jpg&name=small" alt="Cover image for X post: China's Humanoid Machine: The Companies Behind Tesla Optimus" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">China's Humanoid Machine: The Companies Behind Tesla Optimus</p>
             </div>
@@ -788,7 +802,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 18 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -797,7 +811,7 @@
                     <a href="https://x.com/i/article/2099523692803887104" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2099523692803887104" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HSh5mgabgAAASV4?format=jpg&name=small" alt="The Most Dangerous AI Isn't Evil. It's Honest." style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HSh5mgabgAAASV4?format=jpg&name=small" alt="Cover image for X post: The Most Dangerous AI Isn't Evil. It's Honest." width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The Most Dangerous AI Isn't Evil. It's Honest.</p>
             </div>
@@ -805,7 +819,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 20 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -814,7 +828,7 @@
                     <a href="https://x.com/i/article/2101666709224460288" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2101666709224460288" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HSqew57WgAMlrVw?format=jpg&name=small" alt="The Most Dangerous AI Isn't Controlled. It's Unaccountable." style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HSqew57WgAMlrVw?format=jpg&name=small" alt="Cover image for X post: The Most Dangerous AI Isn't Controlled. It's Unaccountable." width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The Most Dangerous AI Isn't Controlled. It's Unaccountable.</p>
             </div>
@@ -822,7 +836,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 18 Sep 2026</div>
@@ -831,7 +845,7 @@
                     <a href="https://x.com/CernBasher/status/2101028802163777708" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2101028802163777708" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HShaDnEW8AAZMkg?format=jpg&name=small" alt="Buy a Tesla Semi and save $65,000 on fuel costs per year." style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HShaDnEW8AAZMkg?format=jpg&name=small" alt="Cover image for X post: Buy a Tesla Semi and save $65,000 on fuel costs per year." width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Buy a Tesla Semi and save $65,000 on fuel costs per year.</p>
             </div>
@@ -839,7 +853,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 16 Sep 2026</div>
@@ -848,7 +862,7 @@
                     <a href="https://x.com/CernBasher/status/2100396728394326076" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
                 </div>
                 <a href="https://x.com/CernBasher/status/2100396728394326076" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/amplify_video_thumb/2100336072651886592/img/P8UnrXdxCdKpzbDr.jpg" alt="The reindustrialization of America is being led by Tesla..." style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/amplify_video_thumb/2100336072651886592/img/P8UnrXdxCdKpzbDr.jpg" alt="Cover image for X post: The reindustrialization of America is being led by Tesla..." width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The reindustrialization of America is being led by Tesla...</p>
             </div>
@@ -856,7 +870,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -865,7 +879,7 @@
                     <a href="https://x.com/i/article/2098834566115205120" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2098834566115205120" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HSDgjioWwAMOKAc?format=jpg&name=small" alt="Forget Surge Pricing: Cybercab Will Turn Transportation Into a Dynamic Market" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HSDgjioWwAMOKAc?format=jpg&name=small" alt="Cover image for X post: Forget Surge Pricing: Cybercab Will Turn Transportation Into a Dynamic Market" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Forget Surge Pricing: Cybercab Will Turn Transportation Into a Dynamic Market</p>
             </div>
@@ -873,7 +887,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 14 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -882,7 +896,7 @@
                     <a href="https://x.com/i/article/2099333634347966475" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2099333634347966475" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HSJbR-7bsAAmwqW?format=jpg&name=small" alt="Tesla Is Building a Self-Improving Company" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HSJbR-7bsAAmwqW?format=jpg&name=small" alt="Cover image for X post: Tesla Is Building a Self-Improving Company" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Tesla Is Building a Self-Improving Company</p>
             </div>
@@ -890,7 +904,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 11 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -899,7 +913,7 @@
                     <a href="https://x.com/i/article/2098448868836880389" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2098448868836880389" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HR8w4-9bkAA95rQ?format=jpg&name=small" alt="The Crazy Economics of the Cybercab" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HR8w4-9bkAA95rQ?format=jpg&name=small" alt="Cover image for X post: The Crazy Economics of the Cybercab" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The Crazy Economics of the Cybercab</p>
             </div>
@@ -907,7 +921,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 7 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -916,7 +930,7 @@
                     <a href="https://x.com/i/article/2097011176378925056" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2097011176378925056" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HRoXAC4bkAADtX1?format=jpg&name=small" alt="Low Cost: The Wrong Way to Think About Cybercab" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HRoXAC4bkAADtX1?format=jpg&name=small" alt="Cover image for X post: Low Cost: The Wrong Way to Think About Cybercab" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Low Cost: The Wrong Way to Think About Cybercab</p>
             </div>
@@ -924,7 +938,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 31 Aug 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -933,7 +947,7 @@
                     <a href="https://x.com/i/article/2094257208208842752" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2094257208208842752" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HRF6Dd4WAAA0Y_u?format=jpg&name=small" alt="Can AI and Robots Outrun $40 Trillion of Debt?" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HRF6Dd4WAAA0Y_u?format=jpg&name=small" alt="Cover image for X post: Can AI and Robots Outrun $40 Trillion of Debt?" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">Can AI and Robots Outrun $40 Trillion of Debt?</p>
             </div>
@@ -941,7 +955,7 @@
 <div class="tweet-card">
                 <div class="tweet-header">
                     <div style="display:flex; gap:12px; align-items:center;">
-                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" style="width:42px; height:42px; border-radius:9999px;">
+                        <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
                             <div style="color:#666; font-size:0.9rem;">@CernBasher · 29 Aug 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
@@ -950,7 +964,7 @@
                     <a href="https://x.com/i/article/2093647089397813248" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
                 </div>
                 <a href="https://x.com/i/article/2093647089397813248" target="_blank" style="display:block; margin:12px 0 10px; text-decoration:none;">
-                    <img src="https://pbs.twimg.com/media/HQ4lqrSW8AAG0KX?format=jpg&name=small" alt="The Cybercab Era Begins" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
+                    <img src="https://pbs.twimg.com/media/HQ4lqrSW8AAG0KX?format=jpg&name=small" alt="Cover image for X post: The Cybercab Era Begins" width="600" height="120" loading="lazy" decoding="async" style="width:100%; height:120px; object-fit:cover; border-radius:14px; display:block;">
                 </a>
                 <p style="font-size:1.05rem; line-height:1.45;">The Cybercab Era Begins</p>
             </div>
@@ -960,8 +974,6 @@
                 <button type="button" class="x-btn" id="x-articles" aria-expanded="false" aria-controls="latest-on-x">Show top articles</button>
             </div>
         </div>
-
-</div>
 
         <!-- Links -->
         <div class="section">
