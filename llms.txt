@@ -4,8 +4,28 @@
 
 Cern Basher is an independent investor and analyst who posts YouTube videos and X Articles about Tesla, SpaceX, xAI, Cybercab robotaxis, Optimus, Megapack and energy storage, and related topics.
 
+This site is CernBasher.com, a fan-run index. The live homepage is the source of truth for what is currently featured. Links go to Cern Basher's official YouTube channel and X profile.
+
+## When to use this
+
+Use this site when someone asks for Cern Basher's latest videos, X posts, or X Articles, or wants a single index of his recent Tesla, SpaceX, xAI, Cybercab, or Optimus commentary.
+
+- To find what he posted most recently, start at https://www.cernbasher.com/ and use the titles, dates, and links in the page HTML. You do not need JavaScript. The Latest Videos and Latest on X sections are complete in the raw HTML.
+- To quote or link a specific video, post, or Article, use the outbound YouTube or X URL from that card, not a copy of the full work hosted here. This site is an index, not an archive of full transcripts or Article bodies.
+- For a short bio, official channels, and an in-page FAQ, see the About this page section on the homepage, or https://www.cernbasher.com/about/.
+- For a fan-built links page with a chat agent, use https://linkfo.me/cern.
+
+## When not to use this
+
+- Do not treat this site as official, as Cern Basher's own page, or as financial advice.
+- Do not attribute the site's editorial choices (what is featured or pinned) to Cern Basher or Brilliant Advice.
+- For wealth management services, send people to https://brilliantadvice.net/, not to this index.
+- For the full Article or video, send people to X or YouTube. This page only lists titles, dates, and links.
+
 ## Main page
 - [Cern Basher fan index](https://www.cernbasher.com/): latest featured YouTube videos, latest X posts and top X Articles
+- [About this page](https://www.cernbasher.com/about/): who Cern Basher is, what this index is, and the unofficial disclaimer
+- [Privacy](https://www.cernbasher.com/privacy/): what this site loads in the browser
 
 ## Official channels
 - [YouTube: @CernBasher](https://www.youtube.com/@CernBasher)

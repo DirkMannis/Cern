@@ -111,6 +111,18 @@
             height: 148px;
         }
 
+        a.featured-video,
+        a.small-video {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+        a.featured-video:focus-visible,
+        a.small-video:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 2px;
+        }
+
         h2 {
             font-size: 1.9rem;
             margin: 18px 0 18px;     /* Reduced heading margin */
@@ -224,23 +236,23 @@
             <h2>Latest Videos</h2>
             
             <div class="video-grid">
-                <div class="featured-video" role="button" tabindex="0" aria-label="Play video" onclick="playVideo('47WLSZm_Jz4')">
+                <a class="featured-video" href="https://www.youtube.com/watch?v=47WLSZm_Jz4" target="_blank" rel="noopener" aria-label="Watch on YouTube: SpaceX Is Building Data Centers Like Lego" onclick="playVideo('47WLSZm_Jz4'); return false;">
                     <img src="https://i.ytimg.com/vi/47WLSZm_Jz4/hqdefault.jpg" alt="Video thumbnail: SpaceX Is Building Data Centers Like Lego" width="1280" height="720" decoding="async" style="width:100%; height:100%; object-fit:cover;">
                     <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:16px;">
                         <p style="font-weight:600; margin:0;">SpaceX Is Building Data Centers Like Lego</p>
                     </div>
-                </div>
+                </a>
 
                 <div class="small-videos">
-                    <div class="small-video" role="button" tabindex="0" aria-label="Play video" onclick="playVideo('Lunbm0zb2mU')">
+                    <a class="small-video" href="https://www.youtube.com/watch?v=Lunbm0zb2mU" target="_blank" rel="noopener" aria-label="Watch on YouTube: Why You Are Valuing Tesla Wrong" onclick="playVideo('Lunbm0zb2mU'); return false;">
                         <img src="https://i.ytimg.com/vi/Lunbm0zb2mU/hqdefault.jpg" alt="Video thumbnail: Why You Are Valuing Tesla Wrong" width="1280" height="720" decoding="async" style="width:100%; height:100%; object-fit:cover;">
                         <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">Why You Are Valuing Tesla Wrong</p>
-                    </div>
+                    </a>
 
-                    <div class="small-video" role="button" tabindex="0" aria-label="Play video" onclick="playVideo('uG5X2Q3Vr4s')">
+                    <a class="small-video" href="https://www.youtube.com/watch?v=uG5X2Q3Vr4s" target="_blank" rel="noopener" aria-label="Watch on YouTube: Tesla&#39;s Robotaxi Growth Is Speeding Up" onclick="playVideo('uG5X2Q3Vr4s'); return false;">
                         <img src="https://i.ytimg.com/vi/uG5X2Q3Vr4s/hqdefault.jpg" alt="Video thumbnail: Tesla&#39;s Robotaxi Growth Is Speeding Up" width="1280" height="720" decoding="async" style="width:100%; height:100%; object-fit:cover;">
                         <p style="position:absolute; bottom:12px; left:12px; right:12px; font-size:0.95rem; font-weight:600;">Tesla&#39;s Robotaxi Growth Is Speeding Up</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -265,7 +277,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 9 Nov 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-11-09">9 Nov 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2119440310715523072" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -282,7 +294,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 6 Nov 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-11-06">6 Nov 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2118724353684599262" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -299,7 +311,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 5 Nov 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-11-05">5 Nov 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2118542153316286464" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -316,7 +328,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 5 Nov 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-11-05">5 Nov 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2118054563626532864" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -333,7 +345,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 4 Nov 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-11-04">4 Nov 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2117973166874066944" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -350,7 +362,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 3 Nov 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-11-03">3 Nov 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2117611989216190465" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -367,7 +379,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 31 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-31">31 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2116710127222812673" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -384,7 +396,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 28 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-28">28 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2115610355233660928" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -401,7 +413,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 27 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-27">27 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2115125014420770816" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -418,7 +430,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 26 Oct 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-26">26 Oct 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2114707735476412436" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -435,7 +447,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 25 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-25">25 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2110192239552909312" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -452,7 +464,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 23 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-23">23 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2113821099414675456" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -469,7 +481,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 22 Oct 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-22">22 Oct 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2113310948832227546" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -486,7 +498,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 20 Oct 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-20">20 Oct 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2112667540405281007" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -500,7 +512,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 19 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-19">19 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2112360387215568896" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -517,7 +529,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 19 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-19">19 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2110505195746775040" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -534,7 +546,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 18 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-18">18 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2111927569306062848" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -551,7 +563,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 17 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-17">17 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2111630352502362112" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -568,7 +580,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 17 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-17">17 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2111168153757904896" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -585,7 +597,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 16 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-16">16 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2111076053917593600" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -602,7 +614,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-15">15 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2110910822041927680" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -619,7 +631,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-15">15 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2110380157303209984" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -636,7 +648,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 13 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-13">13 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2110138159124160512" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -653,7 +665,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 12 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-12">12 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2101093122541342720" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -670,7 +682,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 11 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-11">11 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2108892042549919745" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -687,7 +699,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 10 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-10">10 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2108881604760240128" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -704,7 +716,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 9 Oct 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-09">9 Oct 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2108551769240314351" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -721,7 +733,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 7 Oct 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-07">7 Oct 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2107895152211624307" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -738,7 +750,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 6 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-06">6 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2107476165183102977" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -755,7 +767,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 4 Oct 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-04">4 Oct 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2106806307085017088" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -772,7 +784,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 2 Oct 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-10-02">2 Oct 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2106034065077879267" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -789,7 +801,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 29 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-29">29 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2104913584136376320" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -806,7 +818,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 28 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-28">28 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2104405597584052224" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -823,7 +835,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 25 Sep 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-25">25 Sep 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2103321586526765559" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -840,7 +852,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 24 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-24">24 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2103143458625957888" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -857,7 +869,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 23 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-23">23 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2099512816801562625" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -874,7 +886,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 21 Sep 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-21">21 Sep 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2102188875036631254" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -891,7 +903,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 21 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-21">21 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2101873512650547202" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -908,7 +920,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 21 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-21">21 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2101054905192534018" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -925,7 +937,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 18 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-18">18 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2099523692803887104" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -942,7 +954,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 20 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-20">20 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2101666709224460288" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -959,7 +971,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 18 Sep 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-18">18 Sep 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2101028802163777708" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -976,7 +988,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 16 Sep 2026</div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-16">16 Sep 2026</time></div>
                         </div>
                     </div>
                     <a href="https://x.com/CernBasher/status/2100396728394326076" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Full Post →</a>
@@ -993,7 +1005,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 15 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-15">15 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2098834566115205120" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -1010,7 +1022,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 14 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-14">14 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2099333634347966475" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -1027,7 +1039,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 11 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-11">11 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2098448868836880389" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -1044,7 +1056,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 7 Sep 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-09-07">7 Sep 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2097011176378925056" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -1061,7 +1073,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 31 Aug 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-08-31">31 Aug 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2094257208208842752" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -1078,7 +1090,7 @@
                         <img src="https://pbs.twimg.com/profile_images/624186747220570112/y9A8cVFc.jpg" alt="Cern Basher avatar" width="42" height="42" loading="lazy" decoding="async" style="width:42px; height:42px; border-radius:9999px;">
                         <div>
                             <div style="font-weight:600;">Cern Basher</div>
-                            <div style="color:#666; font-size:0.9rem;">@CernBasher · 29 Aug 2026 · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
+                            <div style="color:#666; font-size:0.9rem;">@CernBasher · <time datetime="2026-08-29">29 Aug 2026</time> · <span style="color:#e11d48; font-weight:600; letter-spacing:0.04em;">Article</span></div>
                         </div>
                     </div>
                     <a href="https://x.com/i/article/2093647089397813248" target="_blank" style="color:#e11d48; font-size:0.9rem;">View Article →</a>
@@ -1132,6 +1144,11 @@
 
     <footer style="text-align:center; padding:60px 0; color:#555; font-size:0.85rem;">
         Unofficial, GrokBot-operated site • Not affiliated with Cern Basher or Brilliant Advice • NFA • Built for <a href="https://linkfo.me" style="color:#e11d48;">Linkfo.me</a> • Contact Linkfo.me @ gmail
+        <div style="margin-top:12px;">
+            <a href="/about/" style="color:#888; text-decoration:none;">About</a>
+            <span style="margin:0 8px;">·</span>
+            <a href="/privacy/" style="color:#888; text-decoration:none;">Privacy</a>
+        </div>
     </footer>
 
     <script src="https://linkfo.me/embed.js" data-username="cern" data-position="right" data-color="#e11d48"></script>
